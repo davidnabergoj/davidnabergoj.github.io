@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Trie implementation | ML, coding, stats</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Introduction
+A trie is data structure which holds strings.
+They allow fast search and insertion of strings, as well as fast search of string prefixes.
+This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith.
+This is the solution to LeetCode 208.
+The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+    <meta name="generator" content="Hugo 0.152.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/my-first-post/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/my-first-post/">
+  <meta property="og:site_name" content="ML, coding, stats">
+  <meta property="og:title" content="Trie implementation">
+  <meta property="og:description" content="Introduction A trie is data structure which holds strings. They allow fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-30T13:45:28+01:00">
+    <meta property="article:modified_time" content="2025-11-30T13:45:28+01:00">
+
+  <meta itemprop="name" content="Trie implementation">
+  <meta itemprop="description" content="Introduction A trie is data structure which holds strings. They allow fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+  <meta itemprop="datePublished" content="2025-11-30T13:45:28+01:00">
+  <meta itemprop="dateModified" content="2025-11-30T13:45:28+01:00">
+  <meta itemprop="wordCount" content="982">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Trie implementation">
+  <meta name="twitter:description" content="Introduction A trie is data structure which holds strings. They allow fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        ML, coding, stats
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Trie implementation</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-11-30T13:45:28+01:00">November 30, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="introduction">Introduction</h1>
+<p>A <a href="https://en.wikipedia.org/wiki/Trie">trie</a> is data structure which holds strings.
+They allow fast search and insertion of strings, as well as fast search of string prefixes.
+This can be especially useful for text autocompletion and spellcheck.</p>
+<p>In this post, we implement a trie in C++ with three basic operations: <code>search</code>, <code>insert</code>, and <code>startsWith</code>.
+This is the solution to <a href="https://leetcode.com/problems/implement-trie-prefix-tree/description/">LeetCode 208</a>.
+The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.</p>
+<h1 id="recursive-solution">Recursive solution</h1>
+<h2 id="trie-class"><code>Trie</code> class</h2>
+<p>We implement the trie as a a tree.
+Each node contains a fixed vector of pointers (called <code>next</code>) to tries below it.
+Each pointer corresponds to a different character.
+For example, <code>next['f']</code> corresponds to words with the substring.</p>
+<p>We use a boolean <code>wordEnd</code> indicating that there exists a word that ends in the current trie root.
+An example where this is useful: the trie contains the word &ldquo;apple&rdquo;, but not &ldquo;app&rdquo;. Searching for &ldquo;app&rdquo; would otherwise be possible, as there exists a path from the root that contains all characters of the word &ldquo;app&rdquo;.
+This boolean lets us avoid the ambiguity.</p>
+<p>We create a helper method <code>getIndex</code> that takes a character of</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Trie</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span> next <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span>(<span style="color:#ae81ff">26</span>, <span style="color:#66d9ef">nullptr</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> wordEnd <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getIndex</span>(<span style="color:#66d9ef">char</span> query) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> query <span style="color:#f92672">-</span> <span style="color:#e6db74">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    Trie() {}  <span style="color:#75715e">// Class constructor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="search"><code>search</code></h2>
+<p>To search for a word in the trie, we start at the root and check if the pointer <code>next[c]</code>, corresponding to the first character <code>c</code>, is not null.
+If it is null, the word is not present and we return <code>false</code>.
+If it isn&rsquo;t, we recursively search if the remainder of the word is found in <code>next[c]</code>.
+If the word has no characters, we return <code>true</code>. This is the base case for recursion.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">search</span>(string word) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (word.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> wordEnd;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> getIndex(word[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>next[index]) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> next[index]<span style="color:#f92672">-&gt;</span>search(word.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="insert"><code>insert</code></h2>
+<p>Inserting a word into the trie is conceptualy similar to searching for it.
+We check if there is a trie, corresponding to the first character of <code>word</code>.
+If not, we create a trie for that character.
+Now that the trie surely exists, we insert the remainder of <code>word</code> into it.
+If the word has no characters, it has been fully inserted into the trie.
+At that point, we set <code>wordEnd = true</code> to indicate that the word belongs to the trie (separating it from its substrings).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insert</span>(string word) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (word.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>        wordEnd <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> idx <span style="color:#f92672">=</span> getIndex(word[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(next[idx])) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// If the Trie does not exist yet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        next[idx] <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Trie();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    next[idx]<span style="color:#f92672">-&gt;</span>insert(word.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="startswith"><code>startsWith</code></h2>
+<p>The <code>startsWith</code> function is very similar to the <code>search</code> function.
+The key difference is that the prefix may not have been inserted into the trie, but the path to it still exists.
+The only difference between <code>search</code> and <code>startsWith</code> is thus not checking if the word is contained in the trie during the recursive base case.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">startsWith</span>(string prefix) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* Returns `true` if there is a previously inserted word
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">       that starts with `prefix`, and `false` otherwise. */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (prefix.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> getIndex(prefix[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>next[index]) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> next[index]<span style="color:#f92672">-&gt;</span>startsWith(prefix.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="full-recursive-solution">Full recursive solution</h2>
+<p>We provide the full recursive solution below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Trie</span> {
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span> next <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span>(<span style="color:#ae81ff">26</span>, <span style="color:#66d9ef">nullptr</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> wordEnd <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getIndex</span>(<span style="color:#66d9ef">char</span> query) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> query <span style="color:#f92672">-</span> <span style="color:#e6db74">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    Trie() {
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insert</span>(string word) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (word.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>            wordEnd <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> idx <span style="color:#f92672">=</span> getIndex(word[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>(next[idx])) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// If the Trie does not exist yet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            next[idx] <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Trie();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        next[idx]<span style="color:#f92672">-&gt;</span>insert(word.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">search</span>(string word) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (word.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> wordEnd;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> getIndex(word[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>next[index]) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> next[index]<span style="color:#f92672">-&gt;</span>search(word.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">startsWith</span>(string prefix) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (prefix.size() <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> index <span style="color:#f92672">=</span> getIndex(prefix[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>next[index]) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> next[index]<span style="color:#f92672">-&gt;</span>startsWith(prefix.substr(<span style="color:#ae81ff">1</span>));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h1 id="iterative-solution">Iterative solution</h1>
+<p>The recursive solution is valid, but contains two sources of avoidable overhead:</p>
+<ul>
+<li>For even moderately long words, we risk stack overflow and add considerable CPU overhead.</li>
+<li>Recursive calls use stack memory proportional to recursion depth (word length).</li>
+</ul>
+<p>We can avoid recursively entering a new stack frame when inserting a new word.
+Instead, we start with the root trie pointer and iteratively change it within a loop over word characters.
+Staying in a single frame like this is faster and uses less space.
+We modify the <code>search</code> and <code>startsWith</code> functions in a similar manner.</p>
+<p>Below is the fully modified iterative solution.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Trie</span> {
+</span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span> next <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>Trie<span style="color:#f92672">*&gt;</span>(<span style="color:#ae81ff">26</span>, <span style="color:#66d9ef">nullptr</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> wordEnd <span style="color:#f92672">=</span> false;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getIndex</span>(<span style="color:#66d9ef">char</span> query) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> query <span style="color:#f92672">-</span> <span style="color:#e6db74">&#39;a&#39;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    Trie() {}  <span style="color:#75715e">// Class constructor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">insert</span>(string word) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Insert `word` into the trie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Trie<span style="color:#f92672">*</span> t <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> word.size(); i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> idx <span style="color:#f92672">=</span> getIndex(word[i]);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>t<span style="color:#f92672">-&gt;</span>next[idx]) {
+</span></span><span style="display:flex;"><span>                t<span style="color:#f92672">-&gt;</span>next[idx] <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Trie();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            t <span style="color:#f92672">=</span> t<span style="color:#f92672">-&gt;</span>next[idx];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        t<span style="color:#f92672">-&gt;</span>wordEnd <span style="color:#f92672">=</span> true;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">search</span>(string word) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Return true if the trie contains `word` and false otherwise
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Trie<span style="color:#f92672">*</span> t <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> word.size(); i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> idx <span style="color:#f92672">=</span> getIndex(word[i]);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>t<span style="color:#f92672">-&gt;</span>next[idx]) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            t <span style="color:#f92672">=</span> t<span style="color:#f92672">-&gt;</span>next[idx];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> t<span style="color:#f92672">-&gt;</span>wordEnd;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">startsWith</span>(string prefix) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Return true if the trie contains a word that starts with `prefix`
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        Trie<span style="color:#f92672">*</span> t <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> prefix.size(); i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> idx <span style="color:#f92672">=</span> getIndex(prefix[i]);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>t<span style="color:#f92672">-&gt;</span>next[idx]) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> false;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            t <span style="color:#f92672">=</span> t<span style="color:#f92672">-&gt;</span>next[idx];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> true;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h1 id="comparison-between-recursive-and-iterative-solutions">Comparison between recursive and iterative solutions</h1>
+<p>The actual runtime and memory consumption are indeed smaller for the iterative solution.
+Leetcode reports a runtime of 90ms and 145MB of memory for the recursive, but only 19ms and 54MB of memory for the iterative solution.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  ML, coding, stats 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
