@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Trie implementation | Sunny Coding</title>
 <meta name="keywords" content="Data structures, Leetcode, C&#43;&#43;, Recursion">
 <meta name="description" content="A trie is data structure which holds strings.
@@ -14,16 +14,16 @@ In this post, we implement a trie in C&#43;&#43; with three basic operations: se
 This is the solution to LeetCode 208.
 The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
 <meta name="author" content="David Nabergoj">
-<link rel="canonical" href="http://localhost:1313/posts/simple_trie/">
+<link rel="canonical" href="https://nabergoj.org/posts/simple_trie/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://nabergoj.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://nabergoj.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://nabergoj.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://nabergoj.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://nabergoj.org/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/simple_trie/">
+<link rel="alternate" hreflang="en" href="https://nabergoj.org/posts/simple_trie/">
 <noscript>
     <style>
         #theme-toggle,
@@ -75,13 +75,89 @@ The problem assumes that all words use characters a-z in the English alphabet, b
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://nabergoj.org/posts/simple_trie/">
+  <meta property="og:site_name" content="Sunny Coding">
+  <meta property="og:title" content="Trie implementation">
+  <meta property="og:description" content="A trie is data structure which holds strings. It allows fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-30T13:45:28+01:00">
+    <meta property="article:modified_time" content="2025-11-30T13:45:28+01:00">
+    <meta property="article:tag" content="Data Structures">
+    <meta property="article:tag" content="Leetcode">
+    <meta property="article:tag" content="C&#43;&#43;">
+    <meta property="article:tag" content="Recursion">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Trie implementation">
+<meta name="twitter:description" content="A trie is data structure which holds strings.
+It allows fast search and insertion of strings, as well as fast search of string prefixes.
+This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith.
+This is the solution to LeetCode 208.
+The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://nabergoj.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Trie implementation",
+      "item": "https://nabergoj.org/posts/simple_trie/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Trie implementation",
+  "name": "Trie implementation",
+  "description": "A trie is data structure which holds strings. It allows fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.\nIn this post, we implement a trie in C++ with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.\n",
+  "keywords": [
+    "Data structures", "Leetcode", "C++", "Recursion"
+  ],
+  "articleBody": "A trie is data structure which holds strings. It allows fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.\nIn this post, we implement a trie in C++ with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.\nRecursive solution Trie class We implement the trie as a a tree. Each node contains a fixed vector of pointers (called next) to tries below it. Each pointer corresponds to a different character. For example, next['f'] corresponds to words with the substring.\nWe use a boolean wordEnd indicating that there exists a word that ends in the current trie root. An example where this is useful: the trie contains the word “apple”, but not “app”. Searching for “app” would otherwise be possible, as there exists a path from the root that contains all characters of the word “app”. This boolean lets us avoid the ambiguity.\nWe create a helper method getIndex that takes a character of\nclass Trie { private: vector\u003cTrie*\u003e next = vector\u003cTrie*\u003e(26, nullptr); bool wordEnd = false; int getIndex(char query) { return query - 'a'; } public: Trie() {} // Class constructor } search To search for a word in the trie, we start at the root and check if the pointer next[c], corresponding to the first character c, is not null. If it is null, the word is not present and we return false. If it isn’t, we recursively search if the remainder of the word is found in next[c]. If the word has no characters, we return true. This is the base case for recursion.\nbool search(string word) { if (word.size() == 0) { return wordEnd; } int index = getIndex(word[0]); if (!next[index]) { return false; } return next[index]-\u003esearch(word.substr(1)); } insert Inserting a word into the trie is conceptualy similar to searching for it. We check if there is a trie, corresponding to the first character of word. If not, we create a trie for that character. Now that the trie surely exists, we insert the remainder of word into it. If the word has no characters, it has been fully inserted into the trie. At that point, we set wordEnd = true to indicate that the word belongs to the trie (separating it from its substrings).\nvoid insert(string word) { if (word.size() == 0) { wordEnd = true; return; } int idx = getIndex(word[0]); if (!(next[idx])) { // If the Trie does not exist yet next[idx] = new Trie(); } next[idx]-\u003einsert(word.substr(1)); } startsWith The startsWith function is very similar to the search function. The key difference is that the prefix may not have been inserted into the trie, but the path to it still exists. The only difference between search and startsWith is thus not checking if the word is contained in the trie during the recursive base case.\nbool startsWith(string prefix) { /* Returns `true` if there is a previously inserted word that starts with `prefix`, and `false` otherwise. */ if (prefix.size() == 0) { return true; } int index = getIndex(prefix[0]); if (!next[index]) { return false; } return next[index]-\u003estartsWith(prefix.substr(1)); } Full recursive solution We provide the full recursive solution below.\nclass Trie { vector\u003cTrie*\u003e next = vector\u003cTrie*\u003e(26, nullptr); bool wordEnd = false; int getIndex(char query) { return query - 'a'; } public: Trie() { } void insert(string word) { if (word.size() == 0) { wordEnd = true; return; } int idx = getIndex(word[0]); if (!(next[idx])) { // If the Trie does not exist yet next[idx] = new Trie(); } next[idx]-\u003einsert(word.substr(1)); } bool search(string word) { if (word.size() == 0) { return wordEnd; } int index = getIndex(word[0]); if (!next[index]) { return false; } return next[index]-\u003esearch(word.substr(1)); } bool startsWith(string prefix) { if (prefix.size() == 0) { return true; } int index = getIndex(prefix[0]); if (!next[index]) { return false; } return next[index]-\u003estartsWith(prefix.substr(1)); } }; Iterative solution The recursive solution is valid, but contains two sources of avoidable overhead:\nFor even moderately long words, we risk stack overflow and add considerable CPU overhead. Recursive calls use stack memory proportional to recursion depth (word length). We can avoid recursively entering a new stack frame when inserting a new word. Instead, we start with the root trie pointer and iteratively change it within a loop over word characters. Staying in a single frame like this is faster and uses less space. We modify the search and startsWith functions in a similar manner.\nBelow is the fully modified iterative solution.\nclass Trie { vector\u003cTrie*\u003e next = vector\u003cTrie*\u003e(26, nullptr); bool wordEnd = false; int getIndex(char query) { return query - 'a'; } public: Trie() {} // Class constructor void insert(string word) { // Insert `word` into the trie Trie* t = this; for (int i = 0; i \u003c word.size(); i++) { int idx = getIndex(word[i]); if (!t-\u003enext[idx]) { t-\u003enext[idx] = new Trie(); } t = t-\u003enext[idx]; } t-\u003ewordEnd = true; } bool search(string word) { // Return true if the trie contains `word` and false otherwise Trie* t = this; for (int i = 0; i \u003c word.size(); i++) { int idx = getIndex(word[i]); if (!t-\u003enext[idx]) { return false; } t = t-\u003enext[idx]; } return t-\u003ewordEnd; } bool startsWith(string prefix) { // Return true if the trie contains a word that starts with `prefix` Trie* t = this; for (int i = 0; i \u003c prefix.size(); i++) { int idx = getIndex(prefix[i]); if (!t-\u003enext[idx]) { return false; } t = t-\u003enext[idx]; } return true; } }; Comparison between recursive and iterative solutions The actual runtime and memory consumption are indeed smaller for the iterative solution. Leetcode reports a runtime of 90ms and 145MB of memory for the recursive, but only 19ms and 54MB of memory for the iterative solution.\n",
+  "wordCount" : "981",
+  "inLanguage": "en",
+  "datePublished": "2025-11-30T13:45:28+01:00",
+  "dateModified": "2025-11-30T13:45:28+01:00",
+  "author":{
+    "@type": "Person",
+    "name": "David Nabergoj"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nabergoj.org/posts/simple_trie/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sunny Coding",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nabergoj.org/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Sunny Coding (Alt + H)">Sunny Coding</a>
+            <a href="https://nabergoj.org/" accesskey="h" title="Sunny Coding (Alt + H)">Sunny Coding</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -117,7 +193,7 @@ The problem assumes that all words use characters a-z in the English alphabet, b
     <h1 class="post-title entry-hint-parent">
       Trie implementation
     </h1>
-    <div class="post-meta"><span title='2025-11-30 13:45:28 +0100 CET'>November 30, 2025</span>&nbsp;·&nbsp;<span>David Nabergoj</span>
+    <div class="post-meta"><span title='2025-11-30 13:45:28 +0100 S'>November 30, 2025</span>&nbsp;·&nbsp;<span>David Nabergoj</span>
 
 </div>
   </header> 
@@ -320,17 +396,17 @@ Leetcode reports a runtime of 90ms and 145MB of memory for the recursive, but on
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/data-structures/">Data Structures</a></li>
-      <li><a href="http://localhost:1313/tags/leetcode/">Leetcode</a></li>
-      <li><a href="http://localhost:1313/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
-      <li><a href="http://localhost:1313/tags/recursion/">Recursion</a></li>
+      <li><a href="https://nabergoj.org/tags/data-structures/">Data Structures</a></li>
+      <li><a href="https://nabergoj.org/tags/leetcode/">Leetcode</a></li>
+      <li><a href="https://nabergoj.org/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+      <li><a href="https://nabergoj.org/tags/recursion/">Recursion</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Sunny Coding</a></span> · 
+        <span>&copy; 2025 <a href="https://nabergoj.org/">Sunny Coding</a></span> · 
 
     <span>
         Powered by
