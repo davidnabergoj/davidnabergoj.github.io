@@ -63,13 +63,13 @@ bool search(string word) {
 }
 ```
 
-It's important to note that `word.substr(1)` creates another string object with just one element less than the original `word`. If $m$ is the length of the `word`, this makes the recursion's time complexity to $O(m^2)$ and results in $O(m^2)$ total allocated space. We could avoid allocating new memory by either:
+It's important to note that `word.substr(1)` creates another string object with just one element less than the original `word`. If \(m\) is the length of the `word`, this makes the recursion's time complexity to \(O(m^2)\) and results in \(O(m^2)\) total allocated space. We could avoid allocating new memory by either:
 
 - treating word as a character array and incrementing the pointer to its beginning,
 - passing in the index of the current word character, or
 - using `std::string_view` from C++17 and greater.
 
-This would reduce the time complexity to the much more preferable $O(m)$ and requires no additional allocated space. However, we keep this recursive implementation as it does not modify LeetCode's framework. We'll see later that an iterative solution makes this easy and avoids pointer manipulation.
+This would reduce the time complexity to the much more preferable \(O(m)\) and requires no additional allocated space. However, we keep this recursive implementation as it does not modify LeetCode's framework. We'll see later that an iterative solution makes this easy and avoids pointer manipulation.
 
 ## `insert`
 Inserting a word into the trie is conceptualy similar to searching for it.
