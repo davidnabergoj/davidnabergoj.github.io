@@ -1,7 +1,7 @@
 +++
 date = '2025-11-30T13:45:28+01:00'
 draft = false
-tags = ['Data structures', 'Leetcode', 'C++', 'Recursion']
+tags = ['Data structures', 'Leetcode', 'C++', 'Recursion', 'Trie']
 title = 'Trie implementation'
 [params]
     author = 'David Nabergoj'

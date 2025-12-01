@@ -6,8 +6,21 @@
     <description>Recent content on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Nov 2025 13:45:28 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 2336: smallest number in infinite set</title>
+      <link>http://localhost:1313/posts/infinite_set/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/infinite_set/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
+We start with an infinite set containing all positive integers.
+We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;strategy&#34;&gt;Strategy&lt;/h2&gt;
+&lt;p&gt;If we only focus on popping smallest integers, then we only need to keep track of the smallest number in the set with a variable &lt;code&gt;n&lt;/code&gt;.
+We start with &lt;code&gt;n = 1&lt;/code&gt;.
+Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Trie implementation</title>
       <link>http://localhost:1313/posts/simple_trie/</link>
