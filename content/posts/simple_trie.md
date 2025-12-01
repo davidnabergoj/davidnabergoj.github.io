@@ -15,9 +15,7 @@ In this post, we implement a trie in C++ with three basic operations: `search`, 
 This is the solution to [LeetCode 208](https://leetcode.com/problems/implement-trie-prefix-tree/description/).
 The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.
 
-# Recursive solution
-
-## `Trie` class 
+# `Trie` class 
 We implement the trie as a a tree.
 Each node contains a fixed vector of pointers (called `next`) to tries below it.
 Each pointer corresponds to a different character.
@@ -43,6 +41,8 @@ public:
 }
 ```
 
+# Recursive solution
+
 ## `search`
 To search for a word in the trie, we start at the root and check if the pointer `next[c]`, corresponding to the first character `c`, is not null.
 If it is null, the word is not present and we return `false`.
@@ -62,6 +62,14 @@ bool search(string word) {
     return next[index]->search(word.substr(1));
 }
 ```
+
+It's important to note that `word.substr(1)` creates another string object with just one element less than the original `word`. If $m$ is the length of the `word`, this makes the recursion's time complexity to $O(m^2)$ and results in $O(m^2)$ total allocated space. We could avoid allocating new memory by either:
+
+- treating word as a character array and incrementing the pointer to its beginning,
+- passing in the index of the current word character, or
+- using `std::string_view` from C++17 and greater.
+
+This would reduce the time complexity to the much more preferable $O(m)$ and requires no additional allocated space. However, we keep this recursive implementation as it does not modify LeetCode's framework. We'll see later that an iterative solution makes this easy and avoids pointer manipulation.
 
 ## `insert`
 Inserting a word into the trie is conceptualy similar to searching for it.
