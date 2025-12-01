@@ -6,7 +6,7 @@ draft: false
 
 ![David](/david.jpg#avatar)
 
-Hi! I'm David, a computer science researcher with a passion for machine learning, programming, and mathematics. 
+Hi! I'm David Nabergoj, a computer science researcher with a passion for machine learning, programming, and mathematics. 
 I use this blog to share my learning journey, implement ML projects, and post solutions to interesting algorithm challenges.
 
 I'm currently pursuing my PhD in computer science at the University of Ljubljana.
