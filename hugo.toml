@@ -2,6 +2,43 @@ baseURL = 'https://nabergoj.org/'
 languageCode = 'en-us'
 title = "Sunny Coding"
 theme = 'PaperMod'
+copyright = "© 2025 - David Nabergoj"
+enableRobotsTXT = true
+mainsections = [ "posts", "about" ]
+
+[minify]
+disableXML = true
+
+[pagination]
+disableAliases = false
+pagerSize = 5
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+  [languages.en.taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[languages.en.menu.main]]
+name = "Posts"
+url = "posts"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "About"
+url = "about/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
 
 [caches]
   [caches.images]
@@ -18,3 +55,47 @@ theme = 'PaperMod'
 
 [params]
   math = true
+  author = "David Nabergoj"
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  displayFullLangName = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowAllPagesInArchive = true
+  ShowPageNums = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "☀️Sunny Coding💻"
+    Content = """
+Welcome to Sunny Coding, the most positive coding blog on the internet!
+I love sharing what I learn about machine learning algorithms and frameworks, programming languages, and mathematics.
+I also post solutions for LeetCode problems that I solve. [More about me here](/about/) :)
+  """
+  
+  [[params.socialIcons]]
+  name = "github"
+  title = "Check out my Github"
+  url = "https://github.com/davidnabergoj"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  title = "Message me on LinkedIn"
+  url = "https://linkedin.com/in/david-nabergoj"
+
+  [[params.socialIcons]]
+  name = "KoFi"
+  title = "Buy me a Ko-Fi :)"
+  url = "https://ko-fi.com/davidnabergoj"
+
+    [params.assets]
+  disableHLJS = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false

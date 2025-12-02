@@ -8,7 +8,7 @@
 <title>Posts | Sunny Coding</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Sunny Coding">
-<meta name="author" content="">
+<meta name="author" content="David Nabergoj">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -107,13 +107,36 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts" title="Posts">
+                    <span class="active">Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header">
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
   <h1>
     Posts
+    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
   </h1>
 </header>
 
@@ -127,7 +150,7 @@
 Strategy If we only focus on popping smallest integers, then we only need to keep track of the smallest number in the set with a variable n. We start with n = 1. Each time we pop, we increment n by one.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <footer class="entry-footer"><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to Leetcode 2336: smallest number in infinite set" href="http://localhost:1313/posts/infinite_set/"></a>
 </article>
 
@@ -141,13 +164,13 @@ Strategy If we only focus on popping smallest integers, then we only need to kee
 In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-11-30 13:45:28 +0100 S'>November 30, 2025</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <footer class="entry-footer"><span title='2025-11-30 13:45:28 +0100 S'>November 30, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to Trie implementation" href="http://localhost:1313/posts/simple_trie/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Sunny Coding</a></span> · 
+        <span>© 2025 - David Nabergoj</span> · 
 
     <span>
         Powered by
