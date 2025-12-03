@@ -7,13 +7,29 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Leetcode 2542: Maximum Subsequence Score</title>
+      <link>http://localhost:1313/posts/leetcode_2542/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_2542/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
+We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
+Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
+If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows:
+&lt;/p&gt;
+\[
+    \min \left\{ B_i | i \in S \right\} \sum_{i \in S} A_i
+\]&lt;p&gt;
+There are many different sets \(S\) that give different scores.
+We want to find the maximum possible score.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Leetcode 2336: smallest number in infinite set</title>
-      <link>http://localhost:1313/posts/infinite_set/</link>
+      <link>http://localhost:1313/posts/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/infinite_set/</guid>
+      <guid>http://localhost:1313/posts/leetcode_2236/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
 We start with an infinite set containing all positive integers.
 We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;
@@ -24,9 +40,9 @@ Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</des
     </item>
     <item>
       <title>Trie implementation</title>
-      <link>http://localhost:1313/posts/simple_trie/</link>
+      <link>http://localhost:1313/posts/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>http://localhost:1313/posts/simple_trie/</guid>
+      <guid>http://localhost:1313/posts/leetcode_208/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
 It allows fast search and insertion of strings, as well as fast search of string prefixes.
 This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;
