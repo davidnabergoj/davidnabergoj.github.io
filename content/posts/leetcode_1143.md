@@ -85,7 +85,7 @@ int lcsLength(string *text1, string *text2, int i, int j) {
 }
 ```
 
-## Time complexity analysis
+## Full solution
 
 Since the sizes of `text1` and `text2` are `n` and `m`, we want to compute `lcsLength(&text1, &text2, n - 1, m - 1)`. This will be the LCS length across the entirety of both strings. Below is the full code.
 
