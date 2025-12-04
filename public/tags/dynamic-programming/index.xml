@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Recursion on Sunny Coding</title>
-    <link>https://nabergoj.org/tags/recursion/</link>
-    <description>Recent content in Recursion on Sunny Coding</description>
+    <title>Dynamic Programming on Sunny Coding</title>
+    <link>https://nabergoj.org/tags/dynamic-programming/</link>
+    <description>Recent content in Dynamic Programming on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nabergoj.org/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nabergoj.org/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leetcode 1143: Longest Common Subsequence</title>
       <link>https://nabergoj.org/posts/leetcode_1143/</link>
@@ -22,18 +22,6 @@ A subsequence of a string &lt;code&gt;s&lt;/code&gt; is obtained by deleting zer
 &lt;p&gt;Let&amp;rsquo;s assume we have two strings: &lt;code&gt;s1&lt;/code&gt; with size &lt;code&gt;n1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt; with size &lt;code&gt;n2&lt;/code&gt;.
 Let&amp;rsquo;s also assume we know their LCS length.
 What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/code&gt; to &lt;code&gt;s1&lt;/code&gt; and a character &lt;code&gt;c2&lt;/code&gt; to &lt;code&gt;s2&lt;/code&gt;?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Leetcode 208: Trie implementation</title>
-      <link>https://nabergoj.org/posts/leetcode_208/</link>
-      <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>https://nabergoj.org/posts/leetcode_208/</guid>
-      <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
-It allows fast search and insertion of strings, as well as fast search of string prefixes.
-This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;
-&lt;p&gt;In this post, we implement a trie in C++ with three basic operations: &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;insert&lt;/code&gt;, and &lt;code&gt;startsWith&lt;/code&gt;.
-This is the solution to &lt;a href=&#34;https://leetcode.com/problems/implement-trie-prefix-tree/description/&#34;&gt;LeetCode 208&lt;/a&gt;.
-The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 date = '2025-11-30T13:45:28+01:00'
 draft = false
 tags = ['Data structures', 'Leetcode', 'C++', 'Recursion', 'Trie']
-title = 'Trie implementation'
+title = 'Leetcode 208: Trie implementation'
 [params]
     author = 'David Nabergoj'
 +++
@@ -239,3 +239,5 @@ public:
 # Comparison between recursive and iterative solutions
 The actual runtime and memory consumption are indeed smaller for the iterative solution.
 Leetcode reports a runtime of 90ms and 145MB of memory for the recursive, but only 19ms and 54MB of memory for the iterative solution.
+
+Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/david-nabergoj). More LeetCode solutions coming soon :)

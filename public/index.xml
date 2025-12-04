@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sunny Coding</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nabergoj.org/</link>
     <description>Recent content on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nabergoj.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 1143: Longest Common Subsequence</title>
+      <link>https://nabergoj.org/posts/leetcode_1143/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://nabergoj.org/posts/leetcode_1143/</guid>
+      <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/longest-common-subsequence&#34;&gt;LeetCode problem 1143&lt;/a&gt;.
+We have two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt; with sizes \(n\) and \(m\), respectively.
+We want to find the length of their longest common subsequence (LCS).
+A subsequence of a string &lt;code&gt;s&lt;/code&gt; is obtained by deleting zero or more characters from &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;strategy&#34;&gt;Strategy&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s assume we have two strings: &lt;code&gt;s1&lt;/code&gt; with size &lt;code&gt;n1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt; with size &lt;code&gt;n2&lt;/code&gt;.
+Let&amp;rsquo;s also assume we know their LCS length.
+What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/code&gt; to &lt;code&gt;s1&lt;/code&gt; and a character &lt;code&gt;c2&lt;/code&gt; to &lt;code&gt;s2&lt;/code&gt;?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Leetcode 2542: Maximum Subsequence Score</title>
-      <link>http://localhost:1313/posts/leetcode_2542/</link>
+      <link>https://nabergoj.org/posts/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2542/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_2542/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
 We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
 Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
@@ -27,9 +41,9 @@ We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 2336: smallest number in infinite set</title>
-      <link>http://localhost:1313/posts/leetcode_2236/</link>
+      <link>https://nabergoj.org/posts/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2236/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_2236/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
 We start with an infinite set containing all positive integers.
 We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;
@@ -39,10 +53,10 @@ We start with &lt;code&gt;n = 1&lt;/code&gt;.
 Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Trie implementation</title>
-      <link>http://localhost:1313/posts/leetcode_208/</link>
+      <title>Leetcode 208: Trie implementation</title>
+      <link>https://nabergoj.org/posts/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_208/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_208/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
 It allows fast search and insertion of strings, as well as fast search of string prefixes.
 This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;
@@ -52,10 +66,10 @@ The problem assumes that all words use characters a-z in the English alphabet, b
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://nabergoj.org/about/</link>
       <pubDate>Sat, 29 Nov 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;David&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/david.jpg#avatar&#34;&gt;&lt;/p&gt;
+      <guid>https://nabergoj.org/about/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;David&#34; loading=&#34;lazy&#34; src=&#34;https://nabergoj.org/david.jpg#avatar&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Hi! I&amp;rsquo;m David Nabergoj, a computer science researcher with a passion for machine learning, programming, and mathematics.
 I use this blog to share my learning journey, implement ML projects, and post solutions to interesting algorithm challenges.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m currently pursuing my PhD in computer science at the University of Ljubljana.
