@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dynamic Programming on Sunny Coding</title>
-    <link>https://nabergoj.org/tags/dynamic-programming/</link>
+    <link>http://localhost:1313/tags/dynamic-programming/</link>
     <description>Recent content in Dynamic Programming on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
     <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nabergoj.org/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leetcode 1143: Longest Common Subsequence</title>
-      <link>https://nabergoj.org/posts/leetcode_1143/</link>
+      <link>http://localhost:1313/posts/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://nabergoj.org/posts/leetcode_1143/</guid>
+      <guid>http://localhost:1313/posts/leetcode_1143/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/longest-common-subsequence&#34;&gt;LeetCode problem 1143&lt;/a&gt;.
 We have two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt; with sizes \(n\) and \(m\), respectively.
 We want to find the length of their longest common subsequence (LCS).

@@ -69,4 +69,4 @@ public:
 };
 ```
 
-Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/david-nabergoj). More LeetCode solutions coming soon :)
+Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/davidnabergoj). More LeetCode solutions coming soon :)

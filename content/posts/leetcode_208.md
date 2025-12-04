@@ -240,4 +240,4 @@ public:
 The actual runtime and memory consumption are indeed smaller for the iterative solution.
 Leetcode reports a runtime of 90ms and 145MB of memory for the recursive, but only 19ms and 54MB of memory for the iterative solution.
 
-Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/david-nabergoj). More LeetCode solutions coming soon :)
+Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/davidnabergoj). More LeetCode solutions coming soon :)

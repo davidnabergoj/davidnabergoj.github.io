@@ -125,4 +125,4 @@ The code passes all tests with a runtime of 55ms and 27.66 MB memory usage. Ther
 The total space complexity is \(O(nm + n + m)\) to hold the matrix and both inputs. It can be simplified to \(O(nm)\).
 The total time complexity is \(O(nm)\) as we need at most \(nm\) evaluations of `lcsLength` to compute the final output by filling the entire matrix.
 
-Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/david-nabergoj). More LeetCode solutions coming soon :)
+Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/davidnabergoj). More LeetCode solutions coming soon :)
