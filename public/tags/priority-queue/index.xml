@@ -15,14 +15,15 @@
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_2542/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
-We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, as well as an integer &lt;code&gt;k&lt;/code&gt;.
-If we pick a set of indices $S$ with exactly &lt;code&gt;k&lt;/code&gt; elements, we obtain a score as follows:
+We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
+Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
+If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows:
 &lt;/p&gt;
 \[
-    \texttt{score} = \min_{i \in S} \{ \texttt{nums2[i]} \} \sum_{i \in S} \texttt{nums1[i]}
+    \min \left\{ B_i | i \in S \right\} \sum_{i \in S} A_i
 \]&lt;p&gt;
-We start with an infinite set containing all positive integers.
-We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;</description>
+There are many different sets \(S\) that give different scores.
+We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 2336: smallest number in infinite set</title>
