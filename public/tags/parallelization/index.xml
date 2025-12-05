@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Parallelization on Sunny Coding</title>
+    <link>https://nabergoj.org/tags/parallelization/</link>
+    <description>Recent content in Parallelization on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nabergoj.org/tags/parallelization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting out with CUDA C&#43;&#43;</title>
+      <link>https://nabergoj.org/posts/cuda_intro/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://nabergoj.org/posts/cuda_intro/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been learning about CUDA C++ programming this week, following &lt;a href=&#34;https://developer.nvidia.com/blog/even-easier-introduction-cuda/&#34;&gt;this blog post&lt;/a&gt; by Mark Harris.
+What makes CUDA useful is its ability to execute many computations in parallel instead of sequentially.
+The linked blog post demonstrates how it can add two very large vectors with a size of 1 million elements each.
+I&amp;rsquo;ll present the most interesting code snippets in an approachable way and show how very similar code can perform vector-vector dot products.
+You can see the full code in my repository here: &lt;a href=&#34;https://github.com/davidnabergoj/cuda-programming&#34;&gt;https://github.com/davidnabergoj/cuda-programming&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,53 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
+    <loc>https://nabergoj.org/tags/c&#43;&#43;/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/tags/cuda/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/tags/gpu/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/tags/parallelization/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/posts/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/posts/cuda_intro/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/tags/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nabergoj.org/tags/dynamic-programming/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dynamic-programming/</loc>
+    <loc>https://nabergoj.org/tags/leetcode/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <loc>https://nabergoj.org/posts/leetcode_1143/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_1143/</loc>
+    <loc>https://nabergoj.org/tags/recursion/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/recursion/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/data-structures/</loc>
+    <loc>https://nabergoj.org/tags/data-structures/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_2542/</loc>
+    <loc>https://nabergoj.org/posts/leetcode_2542/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/priority-queue/</loc>
+    <loc>https://nabergoj.org/tags/priority-queue/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_2236/</loc>
+    <loc>https://nabergoj.org/posts/leetcode_2236/</loc>
     <lastmod>2025-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_208/</loc>
+    <loc>https://nabergoj.org/posts/leetcode_208/</loc>
     <lastmod>2025-11-30T13:45:28+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/trie/</loc>
+    <loc>https://nabergoj.org/tags/trie/</loc>
     <lastmod>2025-11-30T13:45:28+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://nabergoj.org/about/</loc>
     <lastmod>2025-11-29T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://nabergoj.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://nabergoj.org/series/</loc>
   </url>
 </urlset>

@@ -2,18 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Sunny Coding</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://nabergoj.org/posts/</link>
     <description>Recent content in Posts on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nabergoj.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting out with CUDA C&#43;&#43;</title>
+      <link>https://nabergoj.org/posts/cuda_intro/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://nabergoj.org/posts/cuda_intro/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been learning about CUDA C++ programming this week, following &lt;a href=&#34;https://developer.nvidia.com/blog/even-easier-introduction-cuda/&#34;&gt;this blog post&lt;/a&gt; by Mark Harris.
+What makes CUDA useful is its ability to execute many computations in parallel instead of sequentially.
+The linked blog post demonstrates how it can add two very large vectors with a size of 1 million elements each.
+I&amp;rsquo;ll present the most interesting code snippets in an approachable way and show how very similar code can perform vector-vector dot products.
+You can see the full code in my repository here: &lt;a href=&#34;https://github.com/davidnabergoj/cuda-programming&#34;&gt;https://github.com/davidnabergoj/cuda-programming&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Leetcode 1143: Longest Common Subsequence</title>
-      <link>http://localhost:1313/posts/leetcode_1143/</link>
+      <link>https://nabergoj.org/posts/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_1143/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_1143/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/longest-common-subsequence&#34;&gt;LeetCode problem 1143&lt;/a&gt;.
 We have two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt; with sizes \(n\) and \(m\), respectively.
 We want to find the length of their longest common subsequence (LCS).
@@ -25,9 +36,9 @@ What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/c
     </item>
     <item>
       <title>Leetcode 2542: Maximum Subsequence Score</title>
-      <link>http://localhost:1313/posts/leetcode_2542/</link>
+      <link>https://nabergoj.org/posts/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2542/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_2542/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
 We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
 Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
@@ -41,9 +52,9 @@ We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 2336: smallest number in infinite set</title>
-      <link>http://localhost:1313/posts/leetcode_2236/</link>
+      <link>https://nabergoj.org/posts/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2236/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_2236/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
 We start with an infinite set containing all positive integers.
 We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;
@@ -54,9 +65,9 @@ Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</des
     </item>
     <item>
       <title>Leetcode 208: Trie implementation</title>
-      <link>http://localhost:1313/posts/leetcode_208/</link>
+      <link>https://nabergoj.org/posts/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_208/</guid>
+      <guid>https://nabergoj.org/posts/leetcode_208/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
 It allows fast search and insertion of strings, as well as fast search of string prefixes.
 This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;
