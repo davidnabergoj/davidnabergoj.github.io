@@ -10,6 +10,19 @@
     <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>LeetCode 162: Find Peak Element</title>
+      <link>http://localhost:1313/posts/leetcode_162/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_162/</guid>
+      <description>&lt;p&gt;Short post about finding the peak element in an array. This is &lt;a href=&#34;https://leetcode.com/problems/find-peak-element&#34;&gt;LeetCode problem 162&lt;/a&gt;.
+We have an array &lt;code&gt;nums&lt;/code&gt; with \(n\) elements and want to find the index of one of its peaks in \(O(n \log n)\) time.&lt;/p&gt;
+&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
+We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
+Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
+If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows:
+&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee</title>
       <link>http://localhost:1313/posts/leetcode_714/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
