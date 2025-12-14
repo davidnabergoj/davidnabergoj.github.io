@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Leetcode on Sunny Coding</title>
+    <title>LeetCode on Sunny Coding</title>
     <link>http://localhost:1313/tags/leetcode/</link>
-    <description>Recent content in Leetcode on Sunny Coding</description>
+    <description>Recent content in LeetCode on Sunny Coding</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Leetcode 1268: Search Suggestions System</title>
+      <title>LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee</title>
+      <link>http://localhost:1313/posts/leetcode_714/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_714/</guid>
+      <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! Let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/&#34;&gt;LeetCode problem 714&lt;/a&gt;.
+We&amp;rsquo;re given an array of stock prices. Each day, we can either buy a stock if we have none or sell a stock we own (but not both).
+When we sell a stock, we have to pay a transaction fee.
+We want to find the maximum profit we can achieve.&lt;/p&gt;
+&lt;p&gt;We approach this using dynamic programming.
+Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 1268: Search Suggestions System</title>
       <link>http://localhost:1313/posts/leetcode_1268/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_1268/</guid>
       <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! This time, we&amp;rsquo;ll be tackling &lt;a href=&#34;https://leetcode.com/problems/search-suggestions-system&#34;&gt;LeetCode problem 1268&lt;/a&gt;.
 We&amp;rsquo;re given an array of strings called &lt;code&gt;products&lt;/code&gt;, as well as a string &lt;code&gt;searchWord&lt;/code&gt;.
 Our goal is to suggest three products after typing each character of &lt;code&gt;searchWord&lt;/code&gt;.
-This is essentially a tiny autocompletion method!&lt;/p&gt;
-&lt;p&gt;We can solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/content/posts/leetcode_208.md&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
-&lt;p&gt;Today, I felt like solving this without writing hyper-optimized or over-engineered code.
+This is a tiny autocompletion method!
+We could solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/posts/leetcode_208/&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
+&lt;p&gt;But today, I felt like solving this without writing hyper-optimized or over-engineered code.
+Our solution will be simple and straightforward&amp;hellip; but still efficient!
 Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 1143: Longest Common Subsequence</title>
+      <title>LeetCode 1143: Longest Common Subsequence</title>
       <link>http://localhost:1313/posts/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_1143/</guid>
@@ -37,7 +50,7 @@ Let&amp;rsquo;s also assume we know their LCS length.
 What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/code&gt; to &lt;code&gt;s1&lt;/code&gt; and a character &lt;code&gt;c2&lt;/code&gt; to &lt;code&gt;s2&lt;/code&gt;?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 2542: Maximum Subsequence Score</title>
+      <title>LeetCode 2542: Maximum Subsequence Score</title>
       <link>http://localhost:1313/posts/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_2542/</guid>
@@ -53,7 +66,7 @@ There are many different sets \(S\) that give different scores.
 We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 2336: smallest number in infinite set</title>
+      <title>LeetCode 2336: smallest number in infinite set</title>
       <link>http://localhost:1313/posts/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_2236/</guid>
@@ -66,7 +79,7 @@ We start with &lt;code&gt;n = 1&lt;/code&gt;.
 Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 208: Trie implementation</title>
+      <title>LeetCode 208: Trie implementation</title>
       <link>http://localhost:1313/posts/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
       <guid>http://localhost:1313/posts/leetcode_208/</guid>

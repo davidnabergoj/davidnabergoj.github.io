@@ -1,8 +1,8 @@
 +++
 date = '2025-12-13'
 draft = false
-tags = ['Leetcode', 'C++', 'Sorting', 'Autocompletion']
-title = 'Leetcode 1268: Search Suggestions System'
+tags = ['LeetCode', 'C++', 'Sorting', 'Autocompletion']
+title = 'LeetCode 1268: Search Suggestions System'
 [params]
     author = 'David Nabergoj'
 +++

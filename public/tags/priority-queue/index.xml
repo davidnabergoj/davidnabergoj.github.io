@@ -10,7 +10,7 @@
     <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/priority-queue/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Leetcode 2542: Maximum Subsequence Score</title>
+      <title>LeetCode 2542: Maximum Subsequence Score</title>
       <link>http://localhost:1313/posts/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_2542/</guid>
@@ -26,7 +26,7 @@ There are many different sets \(S\) that give different scores.
 We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 2336: smallest number in infinite set</title>
+      <title>LeetCode 2336: smallest number in infinite set</title>
       <link>http://localhost:1313/posts/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_2236/</guid>

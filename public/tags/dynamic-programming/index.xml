@@ -7,10 +7,22 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Leetcode 1143: Longest Common Subsequence</title>
+      <title>LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee</title>
+      <link>http://localhost:1313/posts/leetcode_714/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_714/</guid>
+      <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! Let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/&#34;&gt;LeetCode problem 714&lt;/a&gt;.
+We&amp;rsquo;re given an array of stock prices. Each day, we can either buy a stock if we have none or sell a stock we own (but not both).
+When we sell a stock, we have to pay a transaction fee.
+We want to find the maximum profit we can achieve.&lt;/p&gt;
+&lt;p&gt;We approach this using dynamic programming.
+Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 1143: Longest Common Subsequence</title>
       <link>http://localhost:1313/posts/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_1143/</guid>

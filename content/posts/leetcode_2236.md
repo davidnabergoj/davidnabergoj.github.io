@@ -1,8 +1,8 @@
 +++
 date = '2025-12-01'
 draft = false
-tags = ['Data structures', 'Leetcode', 'C++', 'Priority queue']
-title = 'Leetcode 2336: smallest number in infinite set'
+tags = ['Data structures', 'LeetCode', 'C++', 'Priority queue']
+title = 'LeetCode 2336: smallest number in infinite set'
 [params]
     author = 'David Nabergoj'
 +++

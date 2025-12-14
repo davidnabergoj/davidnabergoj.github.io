@@ -1,8 +1,8 @@
 +++
 date = '2025-12-03'
 draft = false
-tags = ['Data structures', 'Leetcode', 'C++', 'Priority queue']
-title = 'Leetcode 2542: Maximum Subsequence Score'
+tags = ['Data structures', 'LeetCode', 'C++', 'Priority queue']
+title = 'LeetCode 2542: Maximum Subsequence Score'
 [params]
     author = 'David Nabergoj'
 +++

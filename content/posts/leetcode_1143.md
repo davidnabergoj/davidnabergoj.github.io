@@ -1,8 +1,8 @@
 +++
 date = '2025-12-04'
 draft = false
-tags = ['Leetcode', 'C++', 'Dynamic programming', 'Recursion']
-title = 'Leetcode 1143: Longest Common Subsequence'
+tags = ['LeetCode', 'C++', 'Dynamic programming', 'Recursion']
+title = 'LeetCode 1143: Longest Common Subsequence'
 [params]
     author = 'David Nabergoj'
 +++
