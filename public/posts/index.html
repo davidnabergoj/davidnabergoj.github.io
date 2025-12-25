@@ -142,14 +142,29 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 399: Evaluate Division
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Thanks for reading! If you liked this post, you can support me on Ko-fi ☕. More LeetCode solutions coming soon :)
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 399: Evaluate Division" href="http://localhost:1313/posts/leetcode_399/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode 162: Find Peak Element
     </h2>
   </header>
   <div class="entry-content">
-    <p>Short post about finding the peak element in an array. This is LeetCode problem 162. We have an array nums with \(n\) elements and want to find the index of one of its peaks in \(O(n \log n)\) time.
-In this post, we’ll be solving LeetCode problem 2542. We have two integer arrays nums1 and nums2 with size \(n\), as well as an integer \(k\). Let’s denote nums1 with \(A\) and nums2 with \(B\). If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows: ...</p>
+    <p>Very quick post about finding the peak element in an array. This is LeetCode problem 162. We have an array nums with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time. The important detail is this: no two neighboring elements have the same value.
+Let’s dive in!
+Solution To solve this in logarithmic time, we will use binary search. We start with a left index and a right index. We then compute a mid point mid = (left &#43; right) / 2. Now we investigate what the local behavior around mid is. If nums[mid] &gt; nums[mid &#43; 1], it means that there’s no point searching for the peak at mid &#43; 1 or to its right, so we set right = mid. Otherwise, there’s no point in searching for the peak at mid or to its left, so we set left = mid &#43; 1.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode 162: Find Peak Element" href="http://localhost:1313/posts/leetcode_162/"></a>
 </article>
 
@@ -192,20 +207,6 @@ But today, I felt like solving this without writing hyper-optimized or over-engi
   </div>
   <footer class="entry-footer"><span title='2025-12-05 00:00:00 +0000 UTC'>December 5, 2025</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to Starting out with CUDA C&#43;&#43;" href="http://localhost:1313/posts/cuda_intro/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 1143: Longest Common Subsequence
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post, we’ll be solving LeetCode problem 1143. We have two strings text1 and text2 with sizes \(n\) and \(m\), respectively. We want to find the length of their longest common subsequence (LCS). A subsequence of a string s is obtained by deleting zero or more characters from s.
-Strategy Let’s assume we have two strings: s1 with size n1 and s2 with size n2. Let’s also assume we know their LCS length. What can we say about LCS length when we append a character c1 to s1 and a character c2 to s2?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-04 00:00:00 +0000 UTC'>December 4, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 1143: Longest Common Subsequence" href="http://localhost:1313/posts/leetcode_1143/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
