@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Earliest Deadline First on Sunny Coding</title>
+    <link>http://localhost:1313/tags/earliest-deadline-first/</link>
+    <description>Recent content in Earliest Deadline First on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/earliest-deadline-first/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 435: Non-overlapping Intervals</title>
+      <link>http://localhost:1313/posts/leetcode_435/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_435/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/non-overlapping-intervals&#34;&gt;LeetCode problem 435: Non-overlapping intervals&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given an array of intervals intervals where &lt;code&gt;intervals[i] = [start_i, end_i]&lt;/code&gt;, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+Note that intervals which only touch at a point are non-overlapping. For example, &lt;code&gt;[1, 2]&lt;/code&gt; and &lt;code&gt;[2, 3]&lt;/code&gt; are non-overlapping.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;interval-scheduling-reformulation&#34;&gt;Interval scheduling reformulation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Interval_scheduling&#34;&gt;Interval scheduling&lt;/a&gt; is a class of problems that involve a set of tasks, represented by their start and end times.
+The &lt;em&gt;interval scheduling maximization problem&lt;/em&gt; (ISMP) is about finding the largest set of non-overlapping tasks.
+This is highly related to our interval removal problem.
+In fact, the following statements are equivalent:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
