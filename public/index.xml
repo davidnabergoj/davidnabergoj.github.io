@@ -31,6 +31,18 @@ This LeetCode problem defines it as the &lt;a href=&#34;https://en.wikipedia.org
 The most common algorithm to compute it is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm&#34;&gt;Wagner-Fischer algorithm&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>LeetCode 746: Min Cost Climbing Stairs</title>
+      <link>http://localhost:1313/posts/leetcode_746/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_746/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/min-cost-climbing-stairs&#34;&gt;LeetCode problem 746: Min Cost Climbing Stairs&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;cost&lt;/code&gt; where &lt;code&gt;cost[i]&lt;/code&gt; is the cost of \(i\)-th step on a staircase. Once you pay the cost, you can either climb one or two steps.
+You can either start from the step with index 0, or the step with index 1.
+Return the minimum cost to reach the top of the floor.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>LeetCode 435: Non-overlapping Intervals</title>
       <link>http://localhost:1313/posts/leetcode_435/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
