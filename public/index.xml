@@ -10,6 +10,21 @@
     <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>LeetCode 216: Combination Sum III</title>
+      <link>http://localhost:1313/posts/leetcode_216/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_216/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/combination-sum-iii&#34;&gt;LeetCode problem 216: Combination Sum III&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Find all valid combinations of &lt;code&gt;k&lt;/code&gt; numbers that sum up to &lt;code&gt;n&lt;/code&gt; such that the following conditions are true:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only numbers 1 through 9 are used.&lt;/li&gt;
+&lt;li&gt;Each number is used at most once.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>LeetCode 790: Domino and Tromino Tiling</title>
       <link>http://localhost:1313/posts/leetcode_790/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
