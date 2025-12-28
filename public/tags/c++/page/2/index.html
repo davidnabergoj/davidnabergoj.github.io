@@ -142,6 +142,62 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 162: Find Peak Element
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Very quick post about finding the peak element in an array. This is LeetCode problem 162. We have an array nums with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time. The important detail is this: no two neighboring elements have the same value.
+Let’s dive in!
+Solution To solve this in logarithmic time, we will use binary search. We start with a left index and a right index. We then compute a mid point mid = (left &#43; right) / 2. Now we investigate what the local behavior around mid is. If nums[mid] &gt; nums[mid &#43; 1], it means that there’s no point searching for the peak at mid &#43; 1 or to its right, so we set right = mid. Otherwise, there’s no point in searching for the peak at mid or to its left, so we set left = mid &#43; 1.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 162: Find Peak Element" href="http://localhost:1313/posts/leetcode_162/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Welcome back to another LeetCode walkthrough! Let’s look at LeetCode problem 714. We’re given an array of stock prices. Each day, we can either buy a stock if we have none or sell a stock we own (but not both). When we sell a stock, we have to pay a transaction fee. We want to find the maximum profit we can achieve.
+We approach this using dynamic programming. Let’s dive in!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee" href="http://localhost:1313/posts/leetcode_714/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 1268: Search Suggestions System
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Welcome back to another LeetCode walkthrough! This time, we’ll be tackling LeetCode problem 1268. We’re given an array of strings called products, as well as a string searchWord. Our goal is to suggest three products after typing each character of searchWord. This is a tiny autocompletion method! We could solve this problem with a Trie, like the one we implemented to solve LeetCode problem 208. Check it out!
+But today, I felt like solving this without writing hyper-optimized or over-engineered code. Our solution will be simple and straightforward… but still efficient! Let’s dive in.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-13 00:00:00 +0000 UTC'>December 13, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 1268: Search Suggestions System" href="http://localhost:1313/posts/leetcode_1268/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Starting out with CUDA C&#43;&#43;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve been learning about CUDA C&#43;&#43; programming this week, following this blog post by Mark Harris. What makes CUDA useful is its ability to execute many computations in parallel instead of sequentially. The linked blog post demonstrates how it can add two very large vectors with a size of 1 million elements each. I’ll present the most interesting code snippets in an approachable way and show how very similar code can perform vector-vector dot products. You can see the full code in my repository here: https://github.com/davidnabergoj/cuda-programming.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-05 00:00:00 +0000 UTC'>December 5, 2025</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to Starting out with CUDA C&#43;&#43;" href="http://localhost:1313/posts/cuda_intro/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode 1143: Longest Common Subsequence
     </h2>
   </header>
@@ -153,51 +209,12 @@ Strategy Let’s assume we have two strings: s1 with size n1 and s2 with size n2
   <footer class="entry-footer"><span title='2025-12-04 00:00:00 +0000 UTC'>December 4, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode 1143: Longest Common Subsequence" href="http://localhost:1313/posts/leetcode_1143/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 2542: Maximum Subsequence Score
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post, we’ll be solving LeetCode problem 2542. We have two integer arrays nums1 and nums2 with size \(n\), as well as an integer \(k\). Let’s denote nums1 with \(A\) and nums2 with \(B\). If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows: \[\min \left\{ B_i | i \in S \right\} \sum_{i \in S} A_i\] There are many different sets \(S\) that give different scores. We want to find the maximum possible score.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-03 00:00:00 +0000 UTC'>December 3, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 2542: Maximum Subsequence Score" href="http://localhost:1313/posts/leetcode_2542/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 2336: smallest number in infinite set
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post, we’ll be solving LeetCode problem 2236. We start with an infinite set containing all positive integers. We may remove and return the smallest integer using int popSmallest() or add a positive integer back into the set using void addBack(int num).
-Strategy If we only focus on popping smallest integers, then we only need to keep track of the smallest number in the set with a variable n. We start with n = 1. Each time we pop, we increment n by one.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 2336: smallest number in infinite set" href="http://localhost:1313/posts/leetcode_2236/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 208: Trie implementation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>A trie is data structure which holds strings. It allows fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
-In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-11-30 13:45:28 +0100 CET'>November 30, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 208: Trie implementation" href="http://localhost:1313/posts/leetcode_208/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/c&#43;&#43;/">
-      «&nbsp;Prev&nbsp;1/2
+      «&nbsp;Prev&nbsp;1/3
+    </a>
+    <a class="next" href="http://localhost:1313/tags/c&#43;&#43;/page/3/">Next&nbsp;3/3&nbsp;»
     </a>
   </nav>
 </footer>

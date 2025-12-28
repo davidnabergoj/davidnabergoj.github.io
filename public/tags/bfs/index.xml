@@ -14,7 +14,15 @@
       <link>http://localhost:1313/posts/leetcode_399/</link>
       <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_399/</guid>
-      <description>&lt;p&gt;Thanks for reading! If you liked this post, you can support me on &lt;a href=&#34;https://ko-fi.com/davidnabergoj&#34;&gt;Ko-fi ☕&lt;/a&gt;. More LeetCode solutions coming soon :)&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi, everyone! Today, we&amp;rsquo;ll be looking at &lt;a href=&#34;https://leetcode.com/problems/evaluate-division/?envType=study-plan-v2&amp;amp;envId=leetcode-75&#34;&gt;LeetCode problem 399&lt;/a&gt;.
+In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\).
+The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers.
+We&amp;rsquo;re then asked to compute the value of a &lt;em&gt;query&lt;/em&gt; equation \(q_1 / q_2\).&lt;/p&gt;
+&lt;p&gt;If \(q_1 / q_2\) is one of the reference equations, we can return that value.
+Otherwise, we can follow a kind of &lt;em&gt;chain-rule&lt;/em&gt; strategy.
+Suppose we are given &lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;b&amp;quot;&lt;/code&gt; with value &lt;code&gt;2.0&lt;/code&gt; and &lt;code&gt;&amp;quot;b&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt; with value &lt;code&gt;3.0&lt;/code&gt;, then we can compute &lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt; by the product:
+&lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;c&amp;quot; = &amp;quot;a&amp;quot; / &amp;quot;b&amp;quot; * &amp;quot;b&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt;, which is equal to &lt;code&gt;2.0 * 3.0 = 6.0&lt;/code&gt;.
+If there&amp;rsquo;s no way to find a solution, we return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

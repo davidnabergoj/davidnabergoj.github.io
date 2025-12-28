@@ -142,75 +142,80 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 790: Domino and Tromino Tiling
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 790: Domino and Tromino Tiling. The instructions are as follows:
+You have two types of tiles: a 2 x 1 domino shape and a tromino shape. You may rotate these shapes. Given an integer \(n\), return the number of ways to tile an 2 x n board. Since the answer may be very large, return it modulo 10^9 &#43; 7. In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-28 00:00:00 +0000 UTC'>December 28, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 790: Domino and Tromino Tiling" href="http://localhost:1313/posts/leetcode_790/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 72: Edit distance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 72: Edit distance. The instructions are as follows:
+Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have the following three operations permitted on a word:
+Insert a character Delete a character Replace a character Let’s dive in!
+The Wagner-Fischer algorithm There are several types of edit distance. This LeetCode problem defines it as the Levenshtein distance. The most common algorithm to compute it is the Wagner-Fischer algorithm.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-27 00:00:00 +0000 UTC'>December 27, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 72: Edit distance" href="http://localhost:1313/posts/leetcode_72/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 746: Min Cost Climbing Stairs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 746: Min Cost Climbing Stairs. The instructions are as follows:
+You are given an integer array cost where cost[i] is the cost of \(i\)-th step on a staircase. Once you pay the cost, you can either climb one or two steps. You can either start from the step with index 0, or the step with index 1. Return the minimum cost to reach the top of the floor.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-27 00:00:00 +0000 UTC'>December 27, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 746: Min Cost Climbing Stairs" href="http://localhost:1313/posts/leetcode_746/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 435: Non-overlapping Intervals
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 435: Non-overlapping intervals. The instructions are as follows:
+Given an array of intervals intervals where intervals[i] = [start_i, end_i], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping. Note that intervals which only touch at a point are non-overlapping. For example, [1, 2] and [2, 3] are non-overlapping.
+Let’s dive in!
+Interval scheduling reformulation Interval scheduling is a class of problems that involve a set of tasks, represented by their start and end times. The interval scheduling maximization problem (ISMP) is about finding the largest set of non-overlapping tasks. This is highly related to our interval removal problem. In fact, the following statements are equivalent:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-26 00:00:00 +0000 UTC'>December 26, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 435: Non-overlapping Intervals" href="http://localhost:1313/posts/leetcode_435/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode 399: Evaluate Division
     </h2>
   </header>
   <div class="entry-content">
-    <p>Thanks for reading! If you liked this post, you can support me on Ko-fi ☕. More LeetCode solutions coming soon :)
-</p>
+    <p>Hi, everyone! Today, we’ll be looking at LeetCode problem 399. In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\). The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers. We’re then asked to compute the value of a query equation \(q_1 / q_2\).
+If \(q_1 / q_2\) is one of the reference equations, we can return that value. Otherwise, we can follow a kind of chain-rule strategy. Suppose we are given &#34;a&#34; / &#34;b&#34; with value 2.0 and &#34;b&#34; / &#34;c&#34; with value 3.0, then we can compute &#34;a&#34; / &#34;c&#34; by the product: &#34;a&#34; / &#34;c&#34; = &#34;a&#34; / &#34;b&#34; * &#34;b&#34; / &#34;c&#34;, which is equal to 2.0 * 3.0 = 6.0. If there’s no way to find a solution, we return -1.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode 399: Evaluate Division" href="http://localhost:1313/posts/leetcode_399/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 162: Find Peak Element
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Very quick post about finding the peak element in an array. This is LeetCode problem 162. We have an array nums with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time. The important detail is this: no two neighboring elements have the same value.
-Let’s dive in!
-Solution To solve this in logarithmic time, we will use binary search. We start with a left index and a right index. We then compute a mid point mid = (left &#43; right) / 2. Now we investigate what the local behavior around mid is. If nums[mid] &gt; nums[mid &#43; 1], it means that there’s no point searching for the peak at mid &#43; 1 or to its right, so we set right = mid. Otherwise, there’s no point in searching for the peak at mid or to its left, so we set left = mid &#43; 1.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 162: Find Peak Element" href="http://localhost:1313/posts/leetcode_162/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Welcome back to another LeetCode walkthrough! Let’s look at LeetCode problem 714. We’re given an array of stock prices. Each day, we can either buy a stock if we have none or sell a stock we own (but not both). When we sell a stock, we have to pay a transaction fee. We want to find the maximum profit we can achieve.
-We approach this using dynamic programming. Let’s dive in!
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee" href="http://localhost:1313/posts/leetcode_714/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 1268: Search Suggestions System
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Welcome back to another LeetCode walkthrough! This time, we’ll be tackling LeetCode problem 1268. We’re given an array of strings called products, as well as a string searchWord. Our goal is to suggest three products after typing each character of searchWord. This is a tiny autocompletion method! We could solve this problem with a Trie, like the one we implemented to solve LeetCode problem 208. Check it out!
-But today, I felt like solving this without writing hyper-optimized or over-engineered code. Our solution will be simple and straightforward… but still efficient! Let’s dive in.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-13 00:00:00 +0000 UTC'>December 13, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 1268: Search Suggestions System" href="http://localhost:1313/posts/leetcode_1268/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Starting out with CUDA C&#43;&#43;
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I’ve been learning about CUDA C&#43;&#43; programming this week, following this blog post by Mark Harris. What makes CUDA useful is its ability to execute many computations in parallel instead of sequentially. The linked blog post demonstrates how it can add two very large vectors with a size of 1 million elements each. I’ll present the most interesting code snippets in an approachable way and show how very similar code can perform vector-vector dot products. You can see the full code in my repository here: https://github.com/davidnabergoj/cuda-programming.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-05 00:00:00 +0000 UTC'>December 5, 2025</span>&nbsp;·&nbsp;<span>8 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to Starting out with CUDA C&#43;&#43;" href="http://localhost:1313/posts/cuda_intro/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/tags/c&#43;&#43;/page/2/">Next&nbsp;2/2&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/c&#43;&#43;/page/2/">Next&nbsp;2/3&nbsp;»
     </a>
   </nav>
 </footer>

@@ -7,25 +7,28 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Fri, 26 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/levenshtein-distance/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LeetCode 435: Non-overlapping Intervals</title>
-      <link>http://localhost:1313/posts/leetcode_435-copy/</link>
-      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_435-copy/</guid>
-      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/non-overlapping-intervals&#34;&gt;LeetCode problem 435: Non-overlapping intervals&lt;/a&gt;.
+      <title>LeetCode 72: Edit distance</title>
+      <link>http://localhost:1313/posts/leetcode_72/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_72/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/edit-distance&#34;&gt;LeetCode problem 72: Edit distance&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Given an array of intervals intervals where &lt;code&gt;intervals[i] = [start_i, end_i]&lt;/code&gt;, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
-Note that intervals which only touch at a point are non-overlapping. For example, &lt;code&gt;[1, 2]&lt;/code&gt; and &lt;code&gt;[2, 3]&lt;/code&gt; are non-overlapping.&lt;/p&gt;
+&lt;p&gt;Given two strings &lt;code&gt;word1&lt;/code&gt; and &lt;code&gt;word2&lt;/code&gt;, return the minimum number of operations required to convert &lt;code&gt;word1&lt;/code&gt; to &lt;code&gt;word2&lt;/code&gt;. You have the following three operations permitted on a word:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Insert a character&lt;/li&gt;
+&lt;li&gt;Delete a character&lt;/li&gt;
+&lt;li&gt;Replace a character&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
-&lt;h2 id=&#34;interval-scheduling-reformulation&#34;&gt;Interval scheduling reformulation&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Interval_scheduling&#34;&gt;Interval scheduling&lt;/a&gt; is a class of problems that involve a set of tasks, represented by their start and end times.
-The &lt;em&gt;interval scheduling maximization problem&lt;/em&gt; (ISMP) is about finding the largest set of non-overlapping tasks.
-This is highly related to our interval removal problem.
-In fact, the following statements are equivalent:&lt;/p&gt;</description>
+&lt;h2 id=&#34;the-wagner-fischer-algorithm&#34;&gt;The Wagner-Fischer algorithm&lt;/h2&gt;
+&lt;p&gt;There are several types of &lt;a href=&#34;https://en.wikipedia.org/wiki/Edit_distance&#34;&gt;edit distance&lt;/a&gt;.
+This LeetCode problem defines it as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Levenshtein_distance&#34;&gt;Levenshtein distance&lt;/a&gt;.
+The most common algorithm to compute it is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm&#34;&gt;Wagner-Fischer algorithm&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

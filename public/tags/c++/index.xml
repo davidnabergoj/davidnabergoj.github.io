@@ -7,14 +7,85 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 790: Domino and Tromino Tiling</title>
+      <link>http://localhost:1313/posts/leetcode_790/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_790/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/domino-and-tromino-tiling&#34;&gt;LeetCode problem 790: Domino and Tromino Tiling&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have two types of tiles: a &lt;code&gt;2 x 1&lt;/code&gt; domino shape and a tromino shape. You may rotate these shapes.
+Given an integer \(n\), return the number of ways to tile an &lt;code&gt;2 x n&lt;/code&gt; board. Since the answer may be very large, return it modulo &lt;code&gt;10^9 + 7&lt;/code&gt;.
+In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 72: Edit distance</title>
+      <link>http://localhost:1313/posts/leetcode_72/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_72/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/edit-distance&#34;&gt;LeetCode problem 72: Edit distance&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given two strings &lt;code&gt;word1&lt;/code&gt; and &lt;code&gt;word2&lt;/code&gt;, return the minimum number of operations required to convert &lt;code&gt;word1&lt;/code&gt; to &lt;code&gt;word2&lt;/code&gt;. You have the following three operations permitted on a word:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Insert a character&lt;/li&gt;
+&lt;li&gt;Delete a character&lt;/li&gt;
+&lt;li&gt;Replace a character&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;the-wagner-fischer-algorithm&#34;&gt;The Wagner-Fischer algorithm&lt;/h2&gt;
+&lt;p&gt;There are several types of &lt;a href=&#34;https://en.wikipedia.org/wiki/Edit_distance&#34;&gt;edit distance&lt;/a&gt;.
+This LeetCode problem defines it as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Levenshtein_distance&#34;&gt;Levenshtein distance&lt;/a&gt;.
+The most common algorithm to compute it is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Wagner%E2%80%93Fischer_algorithm&#34;&gt;Wagner-Fischer algorithm&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 746: Min Cost Climbing Stairs</title>
+      <link>http://localhost:1313/posts/leetcode_746/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_746/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/min-cost-climbing-stairs&#34;&gt;LeetCode problem 746: Min Cost Climbing Stairs&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;cost&lt;/code&gt; where &lt;code&gt;cost[i]&lt;/code&gt; is the cost of \(i\)-th step on a staircase. Once you pay the cost, you can either climb one or two steps.
+You can either start from the step with index 0, or the step with index 1.
+Return the minimum cost to reach the top of the floor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 435: Non-overlapping Intervals</title>
+      <link>http://localhost:1313/posts/leetcode_435/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_435/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/non-overlapping-intervals&#34;&gt;LeetCode problem 435: Non-overlapping intervals&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given an array of intervals intervals where &lt;code&gt;intervals[i] = [start_i, end_i]&lt;/code&gt;, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+Note that intervals which only touch at a point are non-overlapping. For example, &lt;code&gt;[1, 2]&lt;/code&gt; and &lt;code&gt;[2, 3]&lt;/code&gt; are non-overlapping.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;interval-scheduling-reformulation&#34;&gt;Interval scheduling reformulation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Interval_scheduling&#34;&gt;Interval scheduling&lt;/a&gt; is a class of problems that involve a set of tasks, represented by their start and end times.
+The &lt;em&gt;interval scheduling maximization problem&lt;/em&gt; (ISMP) is about finding the largest set of non-overlapping tasks.
+This is highly related to our interval removal problem.
+In fact, the following statements are equivalent:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 399: Evaluate Division</title>
       <link>http://localhost:1313/posts/leetcode_399/</link>
       <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/leetcode_399/</guid>
-      <description>&lt;p&gt;Thanks for reading! If you liked this post, you can support me on &lt;a href=&#34;https://ko-fi.com/davidnabergoj&#34;&gt;Ko-fi ☕&lt;/a&gt;. More LeetCode solutions coming soon :)&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi, everyone! Today, we&amp;rsquo;ll be looking at &lt;a href=&#34;https://leetcode.com/problems/evaluate-division/?envType=study-plan-v2&amp;amp;envId=leetcode-75&#34;&gt;LeetCode problem 399&lt;/a&gt;.
+In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\).
+The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers.
+We&amp;rsquo;re then asked to compute the value of a &lt;em&gt;query&lt;/em&gt; equation \(q_1 / q_2\).&lt;/p&gt;
+&lt;p&gt;If \(q_1 / q_2\) is one of the reference equations, we can return that value.
+Otherwise, we can follow a kind of &lt;em&gt;chain-rule&lt;/em&gt; strategy.
+Suppose we are given &lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;b&amp;quot;&lt;/code&gt; with value &lt;code&gt;2.0&lt;/code&gt; and &lt;code&gt;&amp;quot;b&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt; with value &lt;code&gt;3.0&lt;/code&gt;, then we can compute &lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt; by the product:
+&lt;code&gt;&amp;quot;a&amp;quot; / &amp;quot;c&amp;quot; = &amp;quot;a&amp;quot; / &amp;quot;b&amp;quot; * &amp;quot;b&amp;quot; / &amp;quot;c&amp;quot;&lt;/code&gt;, which is equal to &lt;code&gt;2.0 * 3.0 = 6.0&lt;/code&gt;.
+If there&amp;rsquo;s no way to find a solution, we return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 162: Find Peak Element</title>

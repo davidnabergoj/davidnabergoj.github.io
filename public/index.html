@@ -172,6 +172,20 @@ I also post solutions for LeetCode problems that I solve. <a href="/about/">More
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 790: Domino and Tromino Tiling
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 790: Domino and Tromino Tiling. The instructions are as follows:
+You have two types of tiles: a 2 x 1 domino shape and a tromino shape. You may rotate these shapes. Given an integer \(n\), return the number of ways to tile an 2 x n board. Since the answer may be very large, return it modulo 10^9 &#43; 7. In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-28 00:00:00 +0000 UTC'>December 28, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 790: Domino and Tromino Tiling" href="http://localhost:1313/posts/leetcode_790/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode 72: Edit distance
     </h2>
   </header>
@@ -228,21 +242,6 @@ If \(q_1 / q_2\) is one of the reference equations, we can return that value. Ot
   </div>
   <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode 399: Evaluate Division" href="http://localhost:1313/posts/leetcode_399/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 162: Find Peak Element
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Very quick post about finding the peak element in an array. This is LeetCode problem 162. We have an array nums with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time. The important detail is this: no two neighboring elements have the same value.
-Let’s dive in!
-Solution To solve this in logarithmic time, we will use binary search. We start with a left index and a right index. We then compute a mid point mid = (left &#43; right) / 2. Now we investigate what the local behavior around mid is. If nums[mid] &gt; nums[mid &#43; 1], it means that there’s no point searching for the peak at mid &#43; 1 or to its right, so we set right = mid. Otherwise, there’s no point in searching for the peak at mid or to its left, so we set left = mid &#43; 1.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-14 00:00:00 +0000 UTC'>December 14, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 162: Find Peak Element" href="http://localhost:1313/posts/leetcode_162/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

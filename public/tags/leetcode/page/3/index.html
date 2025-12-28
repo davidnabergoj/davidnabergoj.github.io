@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts | Sunny Coding</title>
+<title>LeetCode | Sunny Coding</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Sunny Coding">
+<meta name="description" content="">
 <meta name="author" content="David Nabergoj">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
         #theme-toggle,
@@ -109,7 +109,7 @@
         <ul id="menu">
             <li>
                 <a href="http://localhost:1313/posts" title="Posts">
-                    <span class="active">Posts</span>
+                    <span>Posts</span>
                 </a>
             </li>
             <li>
@@ -126,10 +126,10 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
-    <a href="/posts/index.xml" title="RSS" aria-label="RSS">
+    LeetCode
+    <a href="/tags/leetcode/index.xml" title="RSS" aria-label="RSS">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" height="23">
         <path d="M4 11a9 9 0 0 1 9 9" />
@@ -140,82 +140,37 @@
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 790: Domino and Tromino Tiling
+    <h2 class="entry-hint-parent">LeetCode 2336: smallest number in infinite set
     </h2>
   </header>
   <div class="entry-content">
-    <p>Today, let’s look at LeetCode problem 790: Domino and Tromino Tiling. The instructions are as follows:
-You have two types of tiles: a 2 x 1 domino shape and a tromino shape. You may rotate these shapes. Given an integer \(n\), return the number of ways to tile an 2 x n board. Since the answer may be very large, return it modulo 10^9 &#43; 7. In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
+    <p>In this post, we’ll be solving LeetCode problem 2236. We start with an infinite set containing all positive integers. We may remove and return the smallest integer using int popSmallest() or add a positive integer back into the set using void addBack(int num).
+Strategy If we only focus on popping smallest integers, then we only need to keep track of the smallest number in the set with a variable n. We start with n = 1. Each time we pop, we increment n by one.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-28 00:00:00 +0000 UTC'>December 28, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 790: Domino and Tromino Tiling" href="http://localhost:1313/posts/leetcode_790/"></a>
+  <footer class="entry-footer"><span title='2025-12-01 00:00:00 +0000 UTC'>December 1, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 2336: smallest number in infinite set" href="http://localhost:1313/posts/leetcode_2236/"></a>
 </article>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 72: Edit distance
+    <h2 class="entry-hint-parent">LeetCode 208: Trie implementation
     </h2>
   </header>
   <div class="entry-content">
-    <p>Today, let’s look at LeetCode problem 72: Edit distance. The instructions are as follows:
-Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have the following three operations permitted on a word:
-Insert a character Delete a character Replace a character Let’s dive in!
-The Wagner-Fischer algorithm There are several types of edit distance. This LeetCode problem defines it as the Levenshtein distance. The most common algorithm to compute it is the Wagner-Fischer algorithm.
+    <p>A trie is data structure which holds strings. It allows fast search and insertion of strings, as well as fast search of string prefixes. This can be especially useful for text autocompletion and spellcheck.
+In this post, we implement a trie in C&#43;&#43; with three basic operations: search, insert, and startsWith. This is the solution to LeetCode 208. The problem assumes that all words use characters a-z in the English alphabet, but our solution can be extended to include more characters.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-27 00:00:00 +0000 UTC'>December 27, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 72: Edit distance" href="http://localhost:1313/posts/leetcode_72/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 746: Min Cost Climbing Stairs
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Today, let’s look at LeetCode problem 746: Min Cost Climbing Stairs. The instructions are as follows:
-You are given an integer array cost where cost[i] is the cost of \(i\)-th step on a staircase. Once you pay the cost, you can either climb one or two steps. You can either start from the step with index 0, or the step with index 1. Return the minimum cost to reach the top of the floor.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-27 00:00:00 +0000 UTC'>December 27, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 746: Min Cost Climbing Stairs" href="http://localhost:1313/posts/leetcode_746/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 435: Non-overlapping Intervals
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Today, let’s look at LeetCode problem 435: Non-overlapping intervals. The instructions are as follows:
-Given an array of intervals intervals where intervals[i] = [start_i, end_i], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping. Note that intervals which only touch at a point are non-overlapping. For example, [1, 2] and [2, 3] are non-overlapping.
-Let’s dive in!
-Interval scheduling reformulation Interval scheduling is a class of problems that involve a set of tasks, represented by their start and end times. The interval scheduling maximization problem (ISMP) is about finding the largest set of non-overlapping tasks. This is highly related to our interval removal problem. In fact, the following statements are equivalent:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-26 00:00:00 +0000 UTC'>December 26, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 435: Non-overlapping Intervals" href="http://localhost:1313/posts/leetcode_435/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 399: Evaluate Division
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hi, everyone! Today, we’ll be looking at LeetCode problem 399. In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\). The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers. We’re then asked to compute the value of a query equation \(q_1 / q_2\).
-If \(q_1 / q_2\) is one of the reference equations, we can return that value. Otherwise, we can follow a kind of chain-rule strategy. Suppose we are given &#34;a&#34; / &#34;b&#34; with value 2.0 and &#34;b&#34; / &#34;c&#34; with value 3.0, then we can compute &#34;a&#34; / &#34;c&#34; by the product: &#34;a&#34; / &#34;c&#34; = &#34;a&#34; / &#34;b&#34; * &#34;b&#34; / &#34;c&#34;, which is equal to 2.0 * 3.0 = 6.0. If there’s no way to find a solution, we return -1.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 399: Evaluate Division" href="http://localhost:1313/posts/leetcode_399/"></a>
+  <footer class="entry-footer"><span title='2025-11-30 13:45:28 +0100 CET'>November 30, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 208: Trie implementation" href="http://localhost:1313/posts/leetcode_208/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/3&nbsp;»
+    <a class="prev" href="http://localhost:1313/tags/leetcode/page/2/">
+      «&nbsp;Prev&nbsp;2/3
     </a>
   </nav>
 </footer>

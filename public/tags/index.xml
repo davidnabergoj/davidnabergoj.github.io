@@ -7,20 +7,83 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dynamic Programming</title>
+      <link>http://localhost:1313/tags/dynamic-programming/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dynamic-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Greedy</title>
+      <link>http://localhost:1313/tags/greedy/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/greedy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tiling</title>
+      <link>http://localhost:1313/tags/tiling/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tiling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Edit Distance</title>
+      <link>http://localhost:1313/tags/edit-distance/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/edit-distance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Levenshtein Distance</title>
+      <link>http://localhost:1313/tags/levenshtein-distance/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/levenshtein-distance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wagner-Fischer Algorithm</title>
+      <link>http://localhost:1313/tags/wagner-fischer-algorithm/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wagner-fischer-algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Earliest Deadline First</title>
+      <link>http://localhost:1313/tags/earliest-deadline-first/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/earliest-deadline-first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interval Scheduling</title>
+      <link>http://localhost:1313/tags/interval-scheduling/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/interval-scheduling/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BFS</title>
       <link>http://localhost:1313/tags/bfs/</link>
       <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/bfs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
@@ -31,24 +94,10 @@
       <description></description>
     </item>
     <item>
-      <title>LeetCode</title>
-      <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/leetcode/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Binary Search</title>
       <link>http://localhost:1313/tags/binary-search/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/binary-search/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dynamic Programming</title>
-      <link>http://localhost:1313/tags/dynamic-programming/</link>
-      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dynamic-programming/</guid>
       <description></description>
     </item>
     <item>

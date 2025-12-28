@@ -21,11 +21,11 @@ The instructions are as follows:&lt;/p&gt;
 Note that intervals which only touch at a point are non-overlapping. For example, &lt;code&gt;[1, 2]&lt;/code&gt; and &lt;code&gt;[2, 3]&lt;/code&gt; are non-overlapping.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
-&lt;h2 id=&#34;reformulation-to-a-maximum-meetings-problem&#34;&gt;Reformulation to a maximum-meetings problem&lt;/h2&gt;
-&lt;p&gt;This problem is very similar to another problem: counting the &lt;a href=&#34;https://www.geeksforgeeks.org/dsa/maximum-meetings-in-one-room/&#34;&gt;maximum number of meetings in one room&lt;/a&gt;.
-Put simply, each meeting has a start and an end time. The problem is to find how many meetings can be held in a single room without interfering with one another.
-The meeting times are given similarly as &lt;code&gt;[start_i, end_i]&lt;/code&gt;.
-The connection to our problem is this: the minimum number of removed intervals is exactly &lt;code&gt;n&lt;/code&gt; minus the maximum number of meetings we can hold, where &lt;code&gt;n&lt;/code&gt; is the total number of intervals.&lt;/p&gt;</description>
+&lt;h2 id=&#34;interval-scheduling-reformulation&#34;&gt;Interval scheduling reformulation&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Interval_scheduling&#34;&gt;Interval scheduling&lt;/a&gt; is a class of problems that involve a set of tasks, represented by their start and end times.
+The &lt;em&gt;interval scheduling maximization problem&lt;/em&gt; (ISMP) is about finding the largest set of non-overlapping tasks.
+This is highly related to our interval removal problem.
+In fact, the following statements are equivalent:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

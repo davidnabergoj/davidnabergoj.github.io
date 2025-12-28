@@ -7,8 +7,20 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 790: Domino and Tromino Tiling</title>
+      <link>http://localhost:1313/posts/leetcode_790/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_790/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/domino-and-tromino-tiling&#34;&gt;LeetCode problem 790: Domino and Tromino Tiling&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have two types of tiles: a &lt;code&gt;2 x 1&lt;/code&gt; domino shape and a tromino shape. You may rotate these shapes.
+Given an integer \(n\), return the number of ways to tile an &lt;code&gt;2 x n&lt;/code&gt; board. Since the answer may be very large, return it modulo &lt;code&gt;10^9 + 7&lt;/code&gt;.
+In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 72: Edit distance</title>
       <link>http://localhost:1313/posts/leetcode_72/</link>
