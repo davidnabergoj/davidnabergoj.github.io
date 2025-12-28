@@ -7,8 +7,23 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 216: Combination Sum III</title>
+      <link>http://localhost:1313/posts/leetcode_216/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_216/</guid>
+      <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/combination-sum-iii&#34;&gt;LeetCode problem 216: Combination Sum III&lt;/a&gt;.
+The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Find all valid combinations of \(k\) numbers that sum up to \(n\) such that the following conditions are true:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only numbers 1 through 9 are used.&lt;/li&gt;
+&lt;li&gt;Each number is used at most once.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 1143: Longest Common Subsequence</title>
       <link>http://localhost:1313/posts/leetcode_1143/</link>

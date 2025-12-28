@@ -10,7 +10,7 @@
 <meta name="description" content="Today, let&rsquo;s look at LeetCode problem 216: Combination Sum III.
 The instructions are as follows:
 
-Find all valid combinations of k numbers that sum up to n such that the following conditions are true:
+Find all valid combinations of \(k\) numbers that sum up to \(n\) such that the following conditions are true:
 
 Only numbers 1 through 9 are used.
 Each number is used at most once.
@@ -161,7 +161,7 @@ Return a list of all possible valid combinations. The list must not contain the 
   <div class="post-content"><p>Today, let&rsquo;s look at <a href="https://leetcode.com/problems/combination-sum-iii">LeetCode problem 216: Combination Sum III</a>.
 The instructions are as follows:</p>
 <blockquote>
-<p>Find all valid combinations of <code>k</code> numbers that sum up to <code>n</code> such that the following conditions are true:</p>
+<p>Find all valid combinations of \(k\) numbers that sum up to \(n\) such that the following conditions are true:</p>
 <ul>
 <li>Only numbers 1 through 9 are used.</li>
 <li>Each number is used at most once.</li>
@@ -175,15 +175,15 @@ The instructions are as follows:</p>
 </blockquote>
 <p>Let&rsquo;s dive in!</p>
 <h2 id="strategy-and-implementation">Strategy and implementation<a hidden class="anchor" aria-hidden="true" href="#strategy-and-implementation">#</a></h2>
-<p>We can approach this problem by trying to fill up an empty vector <code>v</code> to size <code>k</code>.
-Once <code>v</code> has length <code>k</code> and sums to <code>n</code>, we add it to the vector of results.
-If it has length <code>k</code>, but does not sum to <code>n</code>, then we replace some elements in it.</p>
+<p>We can approach this problem by trying to fill up an empty vector <code>v</code> to size \(k\).
+Once <code>v</code> has length \(k\) and sums to \(n\), we add it to the vector of results.
+If it has length \(k\), but does not sum to \(n\), then we replace some elements in it.</p>
 <p>A systematic way of doing this is via <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a>.
 We create a recursive function <code>void solve(size_t total)</code>, where <code>total</code> is the current sum of <code>v</code>. The function <code>solve</code> also has access to a global vector <code>v</code>, a global vector of vectors <code>results</code>, a target vector length variable, and a target sum variable.</p>
 <p>During each recursive call, we apply one of these three rules:</p>
 <ol>
-<li>If <code>v</code> has length <code>k</code> and <code>total</code> equals <code>n</code>, then we add <code>v</code> to <code>results</code>.</li>
-<li>If <code>v</code> is shorter than <code>k</code> and <code>total &lt; n</code>, then we add recursively call <code>solve</code> several times. Before each call, we add a new number <code>j</code> to the end of the vector (<code>j</code> has to be bigger than the last element of <code>v</code>, but at most 9). We then call the function with <code>solve(total + j)</code> to indicate the change in the vector sum. During this call, solutions may be added to <code>results</code>. After the call finishes, we pop the last element of <code>v</code> and apply the procedure for the next value of <code>j</code>.</li>
+<li>If <code>v</code> has length \(k\) and <code>total</code> equals \(n\), then we add <code>v</code> to <code>results</code>.</li>
+<li>If <code>v</code> is shorter than \(k\) and <code>total &lt; n</code>, then we add recursively call <code>solve</code> several times. Before each call, we add a new number <code>j</code> to the end of the vector (<code>j</code> has to be bigger than the last element of <code>v</code>, but at most 9). We then call the function with <code>solve(total + j)</code> to indicate the change in the vector sum. During this call, solutions may be added to <code>results</code>. After the call finishes, we pop the last element of <code>v</code> and apply the procedure for the next value of <code>j</code>.</li>
 <li>If neither of the two rules above applies, we do nothing.</li>
 </ol>
 <p>Rule 1 and rule 3 are base cases for recursion. If rule 1 applies, we&rsquo;ve identified <code>v</code> as one possible solution. If rule 3 applies, we did not.
@@ -238,7 +238,7 @@ We apply the recursive call to <code>solve</code> and backtrack after the call f
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></div><p>We can bound the number of solutions to check with \(9^k\).
-A tighter bound is the <a href="https://math.stackexchange.com/a/658266">number of strictly increasing sequences</a> of length <code>k</code> with elements from \(\{1, \dots, 9\}\).
+A tighter bound is the <a href="https://math.stackexchange.com/a/658266">number of strictly increasing sequences</a> of length \(k\) with elements from \(\{1, \dots, 9\}\).
 There are \(\binom{9}{k} = 9! / ((9-k)!k!)\) such sequences.
 The maximal number of sequences is 126 and occurs at \(k = 4\) or \(k = 5\).
 The total number of candidates explored (including those shorter than \(k\)) is bounded by \(\sum_{i=0}^k \binom{9}{i}\), which is maximized when \(k = 9\) and equals 512.</p>

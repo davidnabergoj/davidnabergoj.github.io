@@ -9,7 +9,7 @@ title = 'LeetCode 216: Combination Sum III'
 
 Today, let's look at [LeetCode problem 216: Combination Sum III](https://leetcode.com/problems/combination-sum-iii).
 The instructions are as follows:
-> Find all valid combinations of `k` numbers that sum up to `n` such that the following conditions are true:
+> Find all valid combinations of \(k\) numbers that sum up to \(n\) such that the following conditions are true:
 > * Only numbers 1 through 9 are used.
 > * Each number is used at most once.
 >
@@ -23,16 +23,16 @@ Let's dive in!
 
 ## Strategy and implementation
 
-We can approach this problem by trying to fill up an empty vector `v` to size `k`.
-Once `v` has length `k` and sums to `n`, we add it to the vector of results.
-If it has length `k`, but does not sum to `n`, then we replace some elements in it.
+We can approach this problem by trying to fill up an empty vector `v` to size \(k\).
+Once `v` has length \(k\) and sums to \(n\), we add it to the vector of results.
+If it has length \(k\), but does not sum to \(n\), then we replace some elements in it.
 
 A systematic way of doing this is via [backtracking](https://en.wikipedia.org/wiki/Backtracking).
 We create a recursive function `void solve(size_t total)`, where `total` is the current sum of `v`. The function `solve` also has access to a global vector `v`, a global vector of vectors `results`, a target vector length variable, and a target sum variable.
 
 During each recursive call, we apply one of these three rules:
-1. If `v` has length `k` and `total` equals `n`, then we add `v` to `results`.
-2. If `v` is shorter than `k` and `total < n`, then we add recursively call `solve` several times. Before each call, we add a new number `j` to the end of the vector (`j` has to be bigger than the last element of `v`, but at most 9). We then call the function with `solve(total + j)` to indicate the change in the vector sum. During this call, solutions may be added to `results`. After the call finishes, we pop the last element of `v` and apply the procedure for the next value of `j`.
+1. If `v` has length \(k\) and `total` equals \(n\), then we add `v` to `results`.
+2. If `v` is shorter than \(k\) and `total < n`, then we add recursively call `solve` several times. Before each call, we add a new number `j` to the end of the vector (`j` has to be bigger than the last element of `v`, but at most 9). We then call the function with `solve(total + j)` to indicate the change in the vector sum. During this call, solutions may be added to `results`. After the call finishes, we pop the last element of `v` and apply the procedure for the next value of `j`.
 3. If neither of the two rules above applies, we do nothing.
 
 Rule 1 and rule 3 are base cases for recursion. If rule 1 applies, we've identified `v` as one possible solution. If rule 3 applies, we did not.
@@ -92,7 +92,7 @@ public:
 ```
 
 We can bound the number of solutions to check with \(9^k\).
-A tighter bound is the [number of strictly increasing sequences](https://math.stackexchange.com/a/658266) of length `k` with elements from \(\{1, \dots, 9\}\).
+A tighter bound is the [number of strictly increasing sequences](https://math.stackexchange.com/a/658266) of length \(k\) with elements from \(\{1, \dots, 9\}\).
 There are \(\binom{9}{k} = 9! / ((9-k)!k!)\) such sequences.
 The maximal number of sequences is 126 and occurs at \(k = 4\) or \(k = 5\).
 The total number of candidates explored (including those shorter than \(k\)) is bounded by \(\sum_{i=0}^k \binom{9}{i}\), which is maximized when \(k = 9\) and equals 512.

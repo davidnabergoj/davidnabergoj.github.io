@@ -142,6 +142,36 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 435: Non-overlapping Intervals
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today, let’s look at LeetCode problem 435: Non-overlapping intervals. The instructions are as follows:
+Given an array of intervals intervals where intervals[i] = [start_i, end_i], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping. Note that intervals which only touch at a point are non-overlapping. For example, [1, 2] and [2, 3] are non-overlapping.
+Let’s dive in!
+Interval scheduling reformulation Interval scheduling is a class of problems that involve a set of tasks, represented by their start and end times. The interval scheduling maximization problem (ISMP) is about finding the largest set of non-overlapping tasks. This is highly related to our interval removal problem. In fact, the following statements are equivalent:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-26 00:00:00 +0000 UTC'>December 26, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 435: Non-overlapping Intervals" href="http://localhost:1313/posts/leetcode_435/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode 399: Evaluate Division
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hi, everyone! Today, we’ll be looking at LeetCode problem 399. In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\). The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers. We’re then asked to compute the value of a query equation \(q_1 / q_2\).
+If \(q_1 / q_2\) is one of the reference equations, we can return that value. Otherwise, we can follow a kind of chain-rule strategy. Suppose we are given &#34;a&#34; / &#34;b&#34; with value 2.0 and &#34;b&#34; / &#34;c&#34; with value 3.0, then we can compute &#34;a&#34; / &#34;c&#34; by the product: &#34;a&#34; / &#34;c&#34; = &#34;a&#34; / &#34;b&#34; * &#34;b&#34; / &#34;c&#34;, which is equal to 2.0 * 3.0 = 6.0. If there’s no way to find a solution, we return -1.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-12-25 00:00:00 +0000 UTC'>December 25, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode 399: Evaluate Division" href="http://localhost:1313/posts/leetcode_399/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode 162: Find Peak Element
     </h2>
   </header>
@@ -181,33 +211,6 @@ But today, I felt like solving this without writing hyper-optimized or over-engi
   </div>
   <footer class="entry-footer"><span title='2025-12-13 00:00:00 +0000 UTC'>December 13, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode 1268: Search Suggestions System" href="http://localhost:1313/posts/leetcode_1268/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 1143: Longest Common Subsequence
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post, we’ll be solving LeetCode problem 1143. We have two strings text1 and text2 with sizes \(n\) and \(m\), respectively. We want to find the length of their longest common subsequence (LCS). A subsequence of a string s is obtained by deleting zero or more characters from s.
-Strategy Let’s assume we have two strings: s1 with size n1 and s2 with size n2. Let’s also assume we know their LCS length. What can we say about LCS length when we append a character c1 to s1 and a character c2 to s2?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-04 00:00:00 +0000 UTC'>December 4, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 1143: Longest Common Subsequence" href="http://localhost:1313/posts/leetcode_1143/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode 2542: Maximum Subsequence Score
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post, we’ll be solving LeetCode problem 2542. We have two integer arrays nums1 and nums2 with size \(n\), as well as an integer \(k\). Let’s denote nums1 with \(A\) and nums2 with \(B\). If we pick a set of indices \(S\) with exactly \(k\) elements, we obtain a score as follows: \[\min \left\{ B_i | i \in S \right\} \sum_{i \in S} A_i\] There are many different sets \(S\) that give different scores. We want to find the maximum possible score.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-12-03 00:00:00 +0000 UTC'>December 3, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>David Nabergoj</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode 2542: Maximum Subsequence Score" href="http://localhost:1313/posts/leetcode_2542/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
