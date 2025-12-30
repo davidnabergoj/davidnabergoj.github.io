@@ -10,28 +10,40 @@
     <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LeetCode 216: Combination Sum III</title>
-      <link>http://localhost:1313/posts/leetcode_216-copy/</link>
+      <title>LeetCode 2462: Total Cost to Hire K Workers</title>
+      <link>http://localhost:1313/posts/leetcode_2462/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_216-copy/</guid>
+      <guid>http://localhost:1313/posts/leetcode_2462/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/total-cost-to-hire-k-workers/&#34;&gt;LeetCode problem 2462: Total Cost to Hire K Workers&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You are given a 0-indexed integer array &lt;code&gt;costs&lt;/code&gt; where &lt;code&gt;costs[i]&lt;/code&gt; is the cost of hiring the \(i\)-th worker.
-You are also given two integers &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;candidates&lt;/code&gt;. We want to hire exactly &lt;code&gt;k&lt;/code&gt; workers according to the following rules:&lt;/p&gt;
+You are also given two integers \(k\) and &lt;code&gt;candidates&lt;/code&gt;. We want to hire exactly \(k\) workers according to the following rules:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;You will run &lt;code&gt;k&lt;/code&gt; sessions and hire exactly one worker in each session.&lt;/li&gt;
+&lt;li&gt;You will run \(k\) sessions and hire exactly one worker in each session.&lt;/li&gt;
 &lt;li&gt;In each hiring session, choose the worker with the lowest cost from either the first candidates workers or the last candidates workers. Break the tie by the smallest index.
 &lt;ul&gt;
-&lt;li&gt;For example, if &lt;code&gt;costs = [3,2,7,7,1,2]&lt;/code&gt; and &lt;code&gt;candidates = 2&lt;/code&gt;, then in the first hiring session, we will choose the 4th worker because they have the lowest cost &lt;code&gt;[3,2,7,7,**1**,2]&lt;/code&gt;.
-In the second hiring session, we will choose 1st worker because they have the same lowest cost as 4th worker but they have the smallest index [3,2,7,7,2]. Please note that the indexing may be changed in the process.
-If there are fewer than candidates workers remaining, choose the worker with the lowest cost among them. Break the tie by the smallest index.
-A worker can only be chosen once.
-Return the total cost to hire exactly k workers.&lt;/li&gt;
+&lt;li&gt;For example, if &lt;code&gt;costs = [3,2,7,7,1,2]&lt;/code&gt; and &lt;code&gt;candidates = 2&lt;/code&gt;, then in the first hiring session, we will choose the 4th worker because they have the lowest cost &lt;code&gt;[3,2,7,7,**1**,2]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In the second hiring session, we will choose 1st worker because they have the same lowest cost as 4th worker but they have the smallest index &lt;code&gt;[3,**2**,7,7,2]&lt;/code&gt;. Please note that the indexing may be changed in the process.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;If there are fewer than candidates workers remaining, choose the worker with the lowest cost among them. Break the tie by the smallest index.&lt;/li&gt;
+&lt;li&gt;A worker can only be chosen once.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Constraints:&lt;/p&gt;</description>
+&lt;p&gt;Return the total cost to hire exactly \(k\) workers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 88: Merge Sorted Array</title>
+      <link>http://localhost:1313/posts/leetcode_88/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode_88/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/&#34;&gt;LeetCode problem 88: Merge Sorted Array&lt;/a&gt;.
+This problem is quite short and straightforward.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are given two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, sorted in non-decreasing order, and two integers \(m\) and \(n\), representing the number of elements in &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; respectively.
+Merge &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; into a single array sorted in non-decreasing order.
+The final sorted array should not be returned by the function, but instead be stored inside the array &lt;code&gt;nums1&lt;/code&gt;. To accommodate this, &lt;code&gt;nums1&lt;/code&gt; has a length of \(m\) + \(n\), where the first \(m\) elements denote the elements that should be merged, and the last \(n\) elements are set to 0 and should be ignored. &lt;code&gt;nums2&lt;/code&gt; has a length of \(n\).&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 216: Combination Sum III</title>

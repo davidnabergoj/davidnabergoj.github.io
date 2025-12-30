@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>FCPP on Sunny Coding</title>
+    <link>http://localhost:1313/tags/fcpp/</link>
+    <description>Recent content in FCPP on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fcpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCPP 1: The Sock Drawer</title>
+      <link>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</guid>
+      <description>&lt;p&gt;This is the first post in a series solving problems from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A drawer contains some red and black socks. Two socks are drawn at random, and the probability that both are red is  \(1/2\).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the minimum total number of socks?&lt;/li&gt;
+&lt;li&gt;What is the minimum if the number of black socks is even?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
