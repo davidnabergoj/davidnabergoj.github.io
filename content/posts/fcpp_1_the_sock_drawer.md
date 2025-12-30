@@ -149,7 +149,6 @@ Let's check them programatically to speed up our search.
 I've written a small Python script to do so:
 
 ```python
-import random
 import math
 
 c = math.sqrt(2) + 1
@@ -176,5 +175,40 @@ r: 16731, b: 6930 -> 0.5
 Our first solution shows up. The second solution is \(r = 15, b = 6\), which is the first with an even number of black socks. We can easily verify it by hand.
 This answers question (b): the minimum number of socks with an even number of black socks is \(15 + 6 = 21\).
 The four remaining solutions are also valid and there are more possibilities if we check greater values of \(b\).
+
+## Minor optimization
+We can improve our solution-finding code. Instead of computing the probability, which involves division and hence some numerical errors, we can individually compute the numerator and denominator of the probability term.
+We can then check if the denominator is equal to two times the numerator.
+In fact, we can even avoid multiplication by two if we use a bit shift.
+
+Here's the code.
+
+```python
+import math
+
+c = math.sqrt(2) + 1
+for b in range(1, 1000000):
+    r = int(math.ceil(b * c))
+    p_numerator = r * (r - 1)
+    p_denominator = (r + b) * (r + b - 1)
+    if p_denominator == p_numerator << 1:
+        print(f'r: {r}, b: {b} -> 0.5')
+```
+
+I've even increased the number of iterations, since now we avoid false positives entirely.
+The code outputs these solutions:
+
+```
+r: 3, b: 1 -> 0.5
+r: 15, b: 6 -> 0.5
+r: 85, b: 35 -> 0.5
+r: 493, b: 204 -> 0.5
+r: 2871, b: 1189 -> 0.5
+r: 16731, b: 6930 -> 0.5
+r: 97513, b: 40391 -> 0.5
+r: 568345, b: 235416 -> 0.5
+r: 3312555, b: 1372105 -> 0.5
+r: 19306983, b: 7997214 -> 0.5
+```
 
 Thanks for reading! If you liked this post, you can support me on [Ko-fi ☕](https://ko-fi.com/davidnabergoj). More FCPP solutions coming soon :)
