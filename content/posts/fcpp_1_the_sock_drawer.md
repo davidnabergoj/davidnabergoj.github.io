@@ -130,7 +130,7 @@ If \(b = 1\), then \(r = 3\) is the integer-valued solution.
 Let's plug both values into the probability equation:
 
 \[
-    \frac{r}{r+b} \frac{r-1}{r+b-1} = \frac{3}{4} \cdot \frac{2}{3} = \frac{1}{2}.
+    \frac{r}{r+b} \cdot \frac{r-1}{r+b-1} = \frac{3}{4} \cdot \frac{2}{3} = \frac{1}{2}.
 \]
 
 So \(r = 3, b = 1\) is a solution! In fact, \(b\) can't possibly be smaller, so this solution answers question (a): the minimum number of socks is \( 3 + 1 = 4\).
@@ -138,7 +138,7 @@ So \(r = 3, b = 1\) is a solution! In fact, \(b\) can't possibly be smaller, so 
 Let's try \(b = 2\); \(r = 5\) is the possible integer-valued solution.
 If we plug them into the probability formula, we get:
 \[
-    \frac{r}{r+b} \frac{r-1}{r+b-1} = \frac{5}{7} \cdot \frac{4}{6} = \frac{10}{21}.
+    \frac{r}{r+b} \cdot \frac{r-1}{r+b-1} = \frac{5}{7} \cdot \frac{4}{6} = \frac{10}{21}.
 \]
 
 Unfortunately, the probability is not equal to \(1/2\), so this is not a valid solution.
