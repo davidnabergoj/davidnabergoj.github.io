@@ -117,11 +117,16 @@ Now we can finally express full the bound as:
     b (\sqrt{2} + 1) < r < b (\sqrt{2} + 1) + 1.
 \]
 
+And since we're looking for integer valued solutions, we can say:
+\[
+    r = \left\lceil b(\sqrt{2} + 1) \right\rceil.
+\]
+
 ## Finding suitable values of \(r\) and \(b\)
 
 Let's try a few values of \(b\) and keep in mind that \(\sqrt{2} + 1 \approx 2.41\).
 
-If \(b\) = 1, then \(r \in [2.41, 3.41]\). The only possible value is \(r = 3\).
+If \(b = 1\), then \(r = 3\) is the integer-valued solution.
 Let's plug both values into the probability equation:
 
 \[
@@ -130,15 +135,16 @@ Let's plug both values into the probability equation:
 
 So \(r = 3, b = 1\) is a solution! In fact, \(b\) can't possibly be smaller, so this solution answers question (a): the minimum number of socks is \( 3 + 1 = 4\).
 
-Let's try \(b = 2\). 
-Now \(r \in [4.83, 5.83]\), so \(r = 5\).
+Let's try \(b = 2\); \(r = 5\) is the possible integer-valued solution.
 If we plug them into the probability formula, we get:
 \[
     \frac{r}{r+b} \frac{r-1}{r+b-1} = \frac{5}{7} \cdot \frac{4}{6} = \frac{10}{21}.
 \]
 
-While there is a real-valued solution for \(r\) in that interval, there is no integer-valued solution.
-Only some values of \(b\) give an integer-valued \(r\).
+Unfortunately, the probability is not equal to \(1/2\), so this is not a valid solution.
+
+While there is a real-valued solution for \(r\) in \(\left[b(\sqrt{2}-1), b(\sqrt{2}-1)+1 \right]\), there is no integer-valued solution.
+Only some values of \(b\) give valid values of \(r\).
 Let's check them programatically to speed up our search.
 I've written a small Python script to do so:
 
@@ -148,15 +154,12 @@ import math
 
 c = math.sqrt(2) + 1
 for b in range(1, 10000):
-    min_r = int(b * c)
-    max_r = int(math.ceil(b * c + 1))
-    for r in range(min_r, max_r):
-        prob = r / (r + b) * (r - 1) / (r + b - 1)
-        eps = 1e-8
-        if 0.5 - eps < prob < 0.5 + eps:
-            print(f'r: {r}, b: {b} -> {prob}')
+    r = int(math.ceil(b * c))
+    prob = r / (r + b) * (r - 1) / (r + b - 1)
+    eps = 1e-8
+    if 0.5 - eps < prob < 0.5 + eps:
+        print(f'r: {r}, b: {b} -> {prob}')
 ```
-
 This script prints values of \(r\) and \(b\) when the probability is equal to 0.5 (allowing for some numerical imprecision).
 This will give us suitable candidates that we can check by hand.
 Running the script gives the following output:
