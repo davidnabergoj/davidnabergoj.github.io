@@ -7,8 +7,18 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 21:23:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCPP 2: Successive wins</title>
+      <link>http://localhost:1313/posts/fcpp_2_successive_wins/</link>
+      <pubDate>Tue, 30 Dec 2025 21:23:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp_2_successive_wins/</guid>
+      <description>&lt;p&gt;This is a post in a series solving problems from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ellis is a tennis player who has to compete against two players: his father and the tennis club champion. The champion is a better player than the father. Ellis will play a three-set series with alternating opponents. He can either play his father first, then the champion, then his father again; or the champion first, then his father, then the champion again. If he wins two sets in a row, he wins a special prize.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FCPP 1: The Sock Drawer</title>
       <link>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</link>
