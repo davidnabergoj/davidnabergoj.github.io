@@ -54,7 +54,7 @@ home = [ "HTML", "RSS", "JSON" ]
           inline = [['\(', '\)']]
 
 [params]
-  math = false
+  math = true
   author = "David Nabergoj"
   defaultTheme = "auto"
   ShowShareButtons = true
