@@ -156,7 +156,7 @@ c = math.sqrt(2) + 1
 for b in range(1, 10000):
     r = int(math.ceil(b * c))
     prob = r / (r + b) * (r - 1) / (r + b - 1)
-    eps = 1e-8
+    eps = 1e-10
     if 0.5 - eps < prob < 0.5 + eps:
         print(f'r: {r}, b: {b} -> {prob}')
 ```
