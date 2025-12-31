@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/binary-search/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 875: Koko Eating Bananas</title>
-      <link>http://localhost:1313/posts/leetcode_875/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_875/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_875/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_875/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/koko-eating-bananas&#34;&gt;LeetCode problem 875: Koko Eating Bananas&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -27,9 +27,9 @@ Return the minimum integer &lt;code&gt;k&lt;/code&gt; such that she can eat all 
     </item>
     <item>
       <title>LeetCode 162: Find Peak Element</title>
-      <link>http://localhost:1313/posts/leetcode_162/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_162/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_162/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_162/</guid>
       <description>&lt;p&gt;Very quick post about finding the peak element in an array.
 This is &lt;a href=&#34;https://leetcode.com/problems/find-peak-element&#34;&gt;LeetCode problem 162&lt;/a&gt;.
 We have an array &lt;code&gt;nums&lt;/code&gt; with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time.

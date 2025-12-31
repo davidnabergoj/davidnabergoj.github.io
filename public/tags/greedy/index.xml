@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 790: Domino and Tromino Tiling</title>
-      <link>http://localhost:1313/posts/leetcode_790/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_790/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_790/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_790/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/domino-and-tromino-tiling&#34;&gt;LeetCode problem 790: Domino and Tromino Tiling&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -23,9 +23,9 @@ In a tiling, every square must be covered by a tile. Two tilings are different i
     </item>
     <item>
       <title>LeetCode 746: Min Cost Climbing Stairs</title>
-      <link>http://localhost:1313/posts/leetcode_746/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_746/</link>
       <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_746/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_746/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/min-cost-climbing-stairs&#34;&gt;LeetCode problem 746: Min Cost Climbing Stairs&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -35,9 +35,9 @@ Return the minimum cost to reach the top of the floor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 435: Non-overlapping Intervals</title>
-      <link>http://localhost:1313/posts/leetcode_435/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_435/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_435/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_435/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/non-overlapping-intervals&#34;&gt;LeetCode problem 435: Non-overlapping intervals&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;

@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/fcpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FCPP 2: Successive wins</title>
-      <link>http://localhost:1313/posts/fcpp_2_successive_wins/</link>
+      <link>http://localhost:1313/posts/fcpp/fcpp_2_successive_wins/</link>
       <pubDate>Tue, 30 Dec 2025 21:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/fcpp_2_successive_wins/</guid>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_2_successive_wins/</guid>
       <description>&lt;p&gt;This is a post in a series solving problems from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
 The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -21,9 +21,9 @@ The problem is paraphrased below; for reference, it is inspired by the original 
     </item>
     <item>
       <title>FCPP 1: The Sock Drawer</title>
-      <link>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</link>
+      <link>http://localhost:1313/posts/fcpp/fcpp_1_the_sock_drawer/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</guid>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_1_the_sock_drawer/</guid>
       <description>&lt;p&gt;This is the first post in a series solving problems from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
 The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
 &lt;blockquote&gt;

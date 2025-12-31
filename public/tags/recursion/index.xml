@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 216: Combination Sum III</title>
-      <link>http://localhost:1313/posts/leetcode_216/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_216/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_216/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_216/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/combination-sum-iii&#34;&gt;LeetCode problem 216: Combination Sum III&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,9 +26,9 @@ The instructions are as follows:&lt;/p&gt;
     </item>
     <item>
       <title>LeetCode 1143: Longest Common Subsequence</title>
-      <link>http://localhost:1313/posts/leetcode_1143/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_1143/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_1143/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/longest-common-subsequence&#34;&gt;LeetCode problem 1143&lt;/a&gt;.
 We have two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt; with sizes \(n\) and \(m\), respectively.
 We want to find the length of their longest common subsequence (LCS).
@@ -40,9 +40,9 @@ What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/c
     </item>
     <item>
       <title>LeetCode 208: Trie implementation</title>
-      <link>http://localhost:1313/posts/leetcode_208/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_208/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_208/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
 It allows fast search and insertion of strings, as well as fast search of string prefixes.
 This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;

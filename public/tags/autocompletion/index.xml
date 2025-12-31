@@ -11,14 +11,14 @@
     <atom:link href="http://localhost:1313/tags/autocompletion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 1268: Search Suggestions System</title>
-      <link>http://localhost:1313/posts/leetcode_1268/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_1268/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_1268/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_1268/</guid>
       <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! This time, we&amp;rsquo;ll be tackling &lt;a href=&#34;https://leetcode.com/problems/search-suggestions-system&#34;&gt;LeetCode problem 1268&lt;/a&gt;.
 We&amp;rsquo;re given an array of strings called &lt;code&gt;products&lt;/code&gt;, as well as a string &lt;code&gt;searchWord&lt;/code&gt;.
 Our goal is to suggest three products after typing each character of &lt;code&gt;searchWord&lt;/code&gt;.
 This is a tiny autocompletion method!
-We could solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/posts/leetcode_208/&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
+We could solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/posts/leetcode_208.md&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
 &lt;p&gt;But today, I felt like solving this without writing hyper-optimized or over-engineered code.
 Our solution will be simple and straightforward&amp;hellip; but still efficient!
 Let&amp;rsquo;s dive in.&lt;/p&gt;</description>

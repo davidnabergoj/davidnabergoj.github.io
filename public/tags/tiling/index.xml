@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/tiling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 790: Domino and Tromino Tiling</title>
-      <link>http://localhost:1313/posts/leetcode_790/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_790/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_790/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_790/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/domino-and-tromino-tiling&#34;&gt;LeetCode problem 790: Domino and Tromino Tiling&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;

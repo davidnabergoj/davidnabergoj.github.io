@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/priority-queue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 2462: Total Cost to Hire K Workers</title>
-      <link>http://localhost:1313/posts/leetcode_2462/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2462/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2462/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2462/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/total-cost-to-hire-k-workers/&#34;&gt;LeetCode problem 2462: Total Cost to Hire K Workers&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -34,9 +34,9 @@ You are also given two integers \(k\) and &lt;code&gt;candidates&lt;/code&gt;. W
     </item>
     <item>
       <title>LeetCode 2542: Maximum Subsequence Score</title>
-      <link>http://localhost:1313/posts/leetcode_2542/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2542/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2542/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
 We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
 Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
@@ -50,9 +50,9 @@ We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 2336: smallest number in infinite set</title>
-      <link>http://localhost:1313/posts/leetcode_2236/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2236/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2236/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
 We start with an infinite set containing all positive integers.
 We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;

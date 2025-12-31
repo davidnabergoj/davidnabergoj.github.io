@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 80: Remove Duplicates from Sorted Array II</title>
-      <link>http://localhost:1313/posts/leetcode_80/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_80/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_80/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_80/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii&#34;&gt;LeetCode problem 80: Remove Duplicates from Sorted Array II&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -22,9 +22,9 @@ The instructions are as follows:&lt;/p&gt;
     </item>
     <item>
       <title>LeetCode 2462: Total Cost to Hire K Workers</title>
-      <link>http://localhost:1313/posts/leetcode_2462/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2462/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2462/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2462/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/total-cost-to-hire-k-workers/&#34;&gt;LeetCode problem 2462: Total Cost to Hire K Workers&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -45,9 +45,9 @@ You are also given two integers \(k\) and &lt;code&gt;candidates&lt;/code&gt;. W
     </item>
     <item>
       <title>LeetCode 88: Merge Sorted Array</title>
-      <link>http://localhost:1313/posts/leetcode_88/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_88/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_88/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_88/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/&#34;&gt;LeetCode problem 88: Merge Sorted Array&lt;/a&gt;.
 This problem is quite short and straightforward.&lt;/p&gt;
 &lt;p&gt;The instructions are as follows:&lt;/p&gt;
@@ -58,9 +58,9 @@ The final sorted array should not be returned by the function, but instead be st
     </item>
     <item>
       <title>LeetCode 216: Combination Sum III</title>
-      <link>http://localhost:1313/posts/leetcode_216/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_216/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_216/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_216/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/combination-sum-iii&#34;&gt;LeetCode problem 216: Combination Sum III&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -73,9 +73,9 @@ The instructions are as follows:&lt;/p&gt;
     </item>
     <item>
       <title>LeetCode 790: Domino and Tromino Tiling</title>
-      <link>http://localhost:1313/posts/leetcode_790/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_790/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_790/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_790/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/domino-and-tromino-tiling&#34;&gt;LeetCode problem 790: Domino and Tromino Tiling&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -85,9 +85,9 @@ In a tiling, every square must be covered by a tile. Two tilings are different i
     </item>
     <item>
       <title>LeetCode 875: Koko Eating Bananas</title>
-      <link>http://localhost:1313/posts/leetcode_875/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_875/</link>
       <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_875/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_875/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/koko-eating-bananas&#34;&gt;LeetCode problem 875: Koko Eating Bananas&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -101,9 +101,9 @@ Return the minimum integer &lt;code&gt;k&lt;/code&gt; such that she can eat all 
     </item>
     <item>
       <title>LeetCode 72: Edit distance</title>
-      <link>http://localhost:1313/posts/leetcode_72/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_72/</link>
       <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_72/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_72/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/edit-distance&#34;&gt;LeetCode problem 72: Edit distance&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -122,9 +122,9 @@ The most common algorithm to compute it is the &lt;a href=&#34;https://en.wikipe
     </item>
     <item>
       <title>LeetCode 746: Min Cost Climbing Stairs</title>
-      <link>http://localhost:1313/posts/leetcode_746/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_746/</link>
       <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_746/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_746/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/min-cost-climbing-stairs&#34;&gt;LeetCode problem 746: Min Cost Climbing Stairs&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -134,9 +134,9 @@ Return the minimum cost to reach the top of the floor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 435: Non-overlapping Intervals</title>
-      <link>http://localhost:1313/posts/leetcode_435/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_435/</link>
       <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_435/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_435/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/non-overlapping-intervals&#34;&gt;LeetCode problem 435: Non-overlapping intervals&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -152,9 +152,9 @@ In fact, the following statements are equivalent:&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 399: Evaluate Division</title>
-      <link>http://localhost:1313/posts/leetcode_399/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_399/</link>
       <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_399/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_399/</guid>
       <description>&lt;p&gt;Hi, everyone! Today, we&amp;rsquo;ll be looking at &lt;a href=&#34;https://leetcode.com/problems/evaluate-division/?envType=study-plan-v2&amp;amp;envId=leetcode-75&#34;&gt;LeetCode problem 399&lt;/a&gt;.
 In this problem, we are given a bunch of reference equations of the form \(a_i / b_i = c_i\) for \(i = 1 , \dots, n\).
 The symbols \(a_i, b_i\) are given as strings, while \(c_i\) are given as floating point numbers.
@@ -167,9 +167,9 @@ If there&amp;rsquo;s no way to find a solution, we return &lt;code&gt;-1&lt;/cod
     </item>
     <item>
       <title>LeetCode 162: Find Peak Element</title>
-      <link>http://localhost:1313/posts/leetcode_162/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_162/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_162/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_162/</guid>
       <description>&lt;p&gt;Very quick post about finding the peak element in an array.
 This is &lt;a href=&#34;https://leetcode.com/problems/find-peak-element&#34;&gt;LeetCode problem 162&lt;/a&gt;.
 We have an array &lt;code&gt;nums&lt;/code&gt; with \(n\) integers and want to find the index of one of its peaks in \(O(\log n)\) time.
@@ -185,9 +185,9 @@ Otherwise, there&amp;rsquo;s no point in searching for the peak at &lt;code&gt;m
     </item>
     <item>
       <title>LeetCode 714: Best Time to Buy and Sell Stock with Transaction Fee</title>
-      <link>http://localhost:1313/posts/leetcode_714/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_714/</link>
       <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_714/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_714/</guid>
       <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! Let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/&#34;&gt;LeetCode problem 714&lt;/a&gt;.
 We&amp;rsquo;re given an array of stock prices. Each day, we can either buy a stock if we have none or sell a stock we own (but not both).
 When we sell a stock, we have to pay a transaction fee.
@@ -197,23 +197,23 @@ Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 1268: Search Suggestions System</title>
-      <link>http://localhost:1313/posts/leetcode_1268/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_1268/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_1268/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_1268/</guid>
       <description>&lt;p&gt;Welcome back to another LeetCode walkthrough! This time, we&amp;rsquo;ll be tackling &lt;a href=&#34;https://leetcode.com/problems/search-suggestions-system&#34;&gt;LeetCode problem 1268&lt;/a&gt;.
 We&amp;rsquo;re given an array of strings called &lt;code&gt;products&lt;/code&gt;, as well as a string &lt;code&gt;searchWord&lt;/code&gt;.
 Our goal is to suggest three products after typing each character of &lt;code&gt;searchWord&lt;/code&gt;.
 This is a tiny autocompletion method!
-We could solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/posts/leetcode_208/&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
+We could solve this problem with a Trie, like the one we implemented to solve &lt;a href=&#34;http://localhost:1313/posts/leetcode_208.md&#34;&gt;LeetCode problem 208&lt;/a&gt;. Check it out!&lt;/p&gt;
 &lt;p&gt;But today, I felt like solving this without writing hyper-optimized or over-engineered code.
 Our solution will be simple and straightforward&amp;hellip; but still efficient!
 Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 1143: Longest Common Subsequence</title>
-      <link>http://localhost:1313/posts/leetcode_1143/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_1143/</link>
       <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_1143/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_1143/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/longest-common-subsequence&#34;&gt;LeetCode problem 1143&lt;/a&gt;.
 We have two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt; with sizes \(n\) and \(m\), respectively.
 We want to find the length of their longest common subsequence (LCS).
@@ -225,9 +225,9 @@ What can we say about LCS length when we append a character &lt;code&gt;c1&lt;/c
     </item>
     <item>
       <title>LeetCode 2542: Maximum Subsequence Score</title>
-      <link>http://localhost:1313/posts/leetcode_2542/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2542/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2542/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2542/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/maximum-subsequence-score&#34;&gt;LeetCode problem 2542&lt;/a&gt;.
 We have two integer arrays &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; with size \(n\), as well as an integer \(k\).
 Let&amp;rsquo;s denote &lt;code&gt;nums1&lt;/code&gt; with \(A\) and &lt;code&gt;nums2&lt;/code&gt; with \(B\).
@@ -241,9 +241,9 @@ We want to find the maximum possible score.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 2336: smallest number in infinite set</title>
-      <link>http://localhost:1313/posts/leetcode_2236/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2236/</link>
       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2236/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2236/</guid>
       <description>&lt;p&gt;In this post, we&amp;rsquo;ll be solving &lt;a href=&#34;https://leetcode.com/problems/smallest-number-in-infinite-set&#34;&gt;LeetCode problem 2236&lt;/a&gt;.
 We start with an infinite set containing all positive integers.
 We may remove and return the smallest integer using &lt;code&gt;int popSmallest()&lt;/code&gt; or add a positive integer back into the set using &lt;code&gt;void addBack(int num)&lt;/code&gt;.&lt;/p&gt;
@@ -254,9 +254,9 @@ Each time we pop, we increment &lt;code&gt;n&lt;/code&gt; by one.&lt;/p&gt;</des
     </item>
     <item>
       <title>LeetCode 208: Trie implementation</title>
-      <link>http://localhost:1313/posts/leetcode_208/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_208/</link>
       <pubDate>Sun, 30 Nov 2025 13:45:28 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_208/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_208/</guid>
       <description>&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; is data structure which holds strings.
 It allows fast search and insertion of strings, as well as fast search of string prefixes.
 This can be especially useful for text autocompletion and spellcheck.&lt;/p&gt;

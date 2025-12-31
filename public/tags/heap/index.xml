@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/heap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 2462: Total Cost to Hire K Workers</title>
-      <link>http://localhost:1313/posts/leetcode_2462/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_2462/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_2462/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_2462/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/total-cost-to-hire-k-workers/&#34;&gt;LeetCode problem 2462: Total Cost to Hire K Workers&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;

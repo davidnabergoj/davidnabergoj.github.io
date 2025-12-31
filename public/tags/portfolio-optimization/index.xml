@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Portfolio Optimization on Sunny Coding</title>
+    <link>http://localhost:1313/tags/portfolio-optimization/</link>
+    <description>Recent content in Portfolio Optimization on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <lastBuildDate>Wed, 31 Dec 2025 11:18:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/portfolio-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning about the Markowitz model</title>
+      <link>http://localhost:1313/posts/risk_analysis/markowitz_model/</link>
+      <pubDate>Wed, 31 Dec 2025 11:18:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/risk_analysis/markowitz_model/</guid>
+      <description>&lt;p&gt;Thanks for reading! If you liked this post, you can support me on &lt;a href=&#34;https://ko-fi.com/davidnabergoj&#34;&gt;Ko-fi ☕&lt;/a&gt;. More portfolio optimization posts coming soon :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

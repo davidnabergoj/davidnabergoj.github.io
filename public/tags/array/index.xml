@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/array/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 80: Remove Duplicates from Sorted Array II</title>
-      <link>http://localhost:1313/posts/leetcode_80/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_80/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_80/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_80/</guid>
       <description>&lt;p&gt;Today, let&amp;rsquo;s look at &lt;a href=&#34;https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii&#34;&gt;LeetCode problem 80: Remove Duplicates from Sorted Array II&lt;/a&gt;.
 The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -22,9 +22,9 @@ The instructions are as follows:&lt;/p&gt;
     </item>
     <item>
       <title>LeetCode 88: Merge Sorted Array</title>
-      <link>http://localhost:1313/posts/leetcode_88/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_88/</link>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/leetcode_88/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_88/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/&#34;&gt;LeetCode problem 88: Merge Sorted Array&lt;/a&gt;.
 This problem is quite short and straightforward.&lt;/p&gt;
 &lt;p&gt;The instructions are as follows:&lt;/p&gt;

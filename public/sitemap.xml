@@ -2,52 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/risk_analysis/markowitz_model/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/markowitz-model/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/portfolio-optimization/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/risk-analysis/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/simulation/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-12-31T11:18:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/combinatorics/</loc>
+    <lastmod>2025-12-30T21:23:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fcpp/</loc>
+    <lastmod>2025-12-30T21:23:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/fcpp/fcpp_2_successive_wins/</loc>
+    <lastmod>2025-12-30T21:23:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/probability/</loc>
+    <lastmod>2025-12-30T21:23:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/array/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/combinatorics/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/fcpp/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/fcpp_1_the_sock_drawer/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/fcpp_2_successive_wins/</loc>
+    <loc>http://localhost:1313/posts/fcpp/fcpp_1_the_sock_drawer/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_80/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/probability/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/simulation/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_80/</loc>
     <lastmod>2025-12-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/heap/</loc>
     <lastmod>2025-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_2462/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_2462/</loc>
     <lastmod>2025-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_88/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_88/</loc>
     <lastmod>2025-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/priority-queue/</loc>
@@ -65,13 +77,13 @@
     <loc>http://localhost:1313/tags/greedy/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_216/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_216/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_790/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_790/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_875/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_875/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/recursion/</loc>
@@ -83,10 +95,10 @@
     <loc>http://localhost:1313/tags/edit-distance/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_72/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_72/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_746/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_746/</loc>
     <lastmod>2025-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/levenshtein-distance/</loc>
@@ -101,7 +113,7 @@
     <loc>http://localhost:1313/tags/interval-scheduling/</loc>
     <lastmod>2025-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_435/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_435/</loc>
     <lastmod>2025-12-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bfs/</loc>
@@ -110,19 +122,19 @@
     <loc>http://localhost:1313/tags/graph/</loc>
     <lastmod>2025-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_399/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_399/</loc>
     <lastmod>2025-12-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_162/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_162/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_714/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_714/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/autocompletion/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_1268/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_1268/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sorting/</loc>
@@ -137,22 +149,22 @@
     <loc>http://localhost:1313/tags/parallelization/</loc>
     <lastmod>2025-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cuda_intro/</loc>
+    <loc>http://localhost:1313/posts/cuda/cuda_intro/</loc>
     <lastmod>2025-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_1143/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_1143/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-structures/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_2542/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_2542/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_2236/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_2236/</loc>
     <lastmod>2025-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/leetcode_208/</loc>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_208/</loc>
     <lastmod>2025-11-30T13:45:28+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/trie/</loc>
