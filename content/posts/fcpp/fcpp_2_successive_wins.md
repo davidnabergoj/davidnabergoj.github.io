@@ -7,7 +7,7 @@ title = 'FCPP 2: Successive wins'
     author = 'David Nabergoj'
 +++
 
-This is a post in a series solving problems from [*Fifty Challenging Problems in Probability* by Frederick Mosteller (1987)](https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552).
+This is the solution for problem 2 from [*Fifty Challenging Problems in Probability* by Frederick Mosteller (1987)](https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552).
 The problem is paraphrased below; for reference, it is inspired by the original book.
 > Ellis is a tennis player who has to compete against two players: his father and the tennis club champion. The champion is a better player than the father. Ellis will play a three-set series with alternating opponents. He can either play his father first, then the champion, then his father again; or the champion first, then his father, then the champion again. If he wins two sets in a row, he wins a special prize.
 > 
