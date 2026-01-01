@@ -7,34 +7,27 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Wed, 31 Dec 2025 11:18:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 31 Dec 2025 10:00:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markowitz Model</title>
-      <link>http://localhost:1313/tags/markowitz-model/</link>
-      <pubDate>Wed, 31 Dec 2025 11:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/markowitz-model/</guid>
+      <title>Array</title>
+      <link>http://localhost:1313/tags/array/</link>
+      <pubDate>Wed, 31 Dec 2025 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/array/</guid>
       <description></description>
     </item>
     <item>
-      <title>Portfolio Optimization</title>
-      <link>http://localhost:1313/tags/portfolio-optimization/</link>
-      <pubDate>Wed, 31 Dec 2025 11:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/portfolio-optimization/</guid>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Wed, 31 Dec 2025 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
-      <title>Risk Analysis</title>
-      <link>http://localhost:1313/tags/risk-analysis/</link>
-      <pubDate>Wed, 31 Dec 2025 11:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/risk-analysis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Simulation</title>
-      <link>http://localhost:1313/tags/simulation/</link>
-      <pubDate>Wed, 31 Dec 2025 11:18:00 +0100</pubDate>
-      <guid>http://localhost:1313/tags/simulation/</guid>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Wed, 31 Dec 2025 10:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
@@ -59,24 +52,10 @@
       <description></description>
     </item>
     <item>
-      <title>Array</title>
-      <link>http://localhost:1313/tags/array/</link>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LeetCode</title>
-      <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <title>Simulation</title>
+      <link>http://localhost:1313/tags/simulation/</link>
+      <pubDate>Tue, 30 Dec 2025 21:23:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/simulation/</guid>
       <description></description>
     </item>
     <item>
