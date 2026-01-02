@@ -1,7 +1,7 @@
 +++
 date = '2026-01-02T13:21:00+01:00'
 draft = false
-tags = ['FCPP', 'Probability', 'Geometry']
+tags = ['FCPP', 'Probability']
 title = 'FCPP 6: Chuck-a-Luck'
 [params]
     author = 'David Nabergoj'
