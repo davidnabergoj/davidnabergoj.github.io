@@ -7,18 +7,19 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 20:23:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 21:07:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>FCPP 4: The Flippant Juror</title>
-      <link>http://localhost:1313/posts/fcpp/fcpp_4_coin_in_square/</link>
-      <pubDate>Thu, 01 Jan 2026 20:23:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/fcpp/fcpp_4_coin_in_square/</guid>
-      <description>&lt;p&gt;This is the solution to problem 3 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+      <title>FCPP 5: Coin in Square</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</link>
+      <pubDate>Thu, 01 Jan 2026 21:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</guid>
+      <description>&lt;p&gt;This is the solution to problem 5 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
 The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Jury A consists of three jurors. The first two have a probability \(p\) of being correct. The third one chooses based on a fair coin toss. All three jurors vote independently.
-Jury B consists of a single juror that is correct with probability \(p\).&lt;/p&gt;</description>
+&lt;p&gt;We&amp;rsquo;re playing a game at a carneval. There is table with horizontal and vertical lines that create a grid of squares. The side of each square is one inch long.
+We throw a penny onto the table. If the penny doesn&amp;rsquo;t cross any line, we win a prize!
+The diameter of a penny is \(3/4\) inches.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,8 +7,29 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 21:07:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 11:38:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 61: Rotate List</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_61/</link>
+      <pubDate>Fri, 02 Jan 2026 11:38:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_61/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/rotate-list&#34;&gt;LeetCode problem 61: Rotate List&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given the &lt;code&gt;head&lt;/code&gt; of a linked list, rotate the list to the right by \(k\) places.&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of nodes in the list is in the range &lt;code&gt;[0, 500]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-100 &amp;lt;= Node.val &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= k &amp;lt;= 2 * 10^9&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;recalling-array-rotations&#34;&gt;Recalling array rotations&lt;/h2&gt;
+&lt;p&gt;In a recent post, I solved this exact problem for arrays (&lt;a href=&#34;http://localhost:1313/posts/leetcode/leetcode_189/&#34;&gt;LeetCode problem 189&lt;/a&gt;).
+The method was a triple-reversal procedure:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FCPP 5: Coin in Square</title>
       <link>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</link>

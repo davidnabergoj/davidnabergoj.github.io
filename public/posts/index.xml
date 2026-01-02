@@ -7,24 +7,54 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 16:36:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 11:38:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LeetCode 122: Best Time to Buy and Sell Stock II</title>
-      <link>http://localhost:1313/posts/leetcode/leetcode_122/</link>
-      <pubDate>Thu, 01 Jan 2026 16:36:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode/leetcode_122/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/&#34;&gt;LeetCode problem 122: Best Time to Buy and Sell Stock II&lt;/a&gt;.&lt;/p&gt;
+      <title>LeetCode 61: Rotate List</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_61/</link>
+      <pubDate>Fri, 02 Jan 2026 11:38:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_61/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/rotate-list&#34;&gt;LeetCode problem 61: Rotate List&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You are given an integer array &lt;code&gt;prices&lt;/code&gt; where &lt;code&gt;prices[i]&lt;/code&gt; is the price of a given stock on the \(i\)-th day.
-On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can sell and buy the stock multiple times on the same day, ensuring you never hold more than one share of the stock.
-Find and return the maximum profit you can achieve.&lt;/p&gt;</description>
+&lt;p&gt;Given the &lt;code&gt;head&lt;/code&gt; of a linked list, rotate the list to the right by \(k\) places.&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of nodes in the list is in the range &lt;code&gt;[0, 500]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-100 &amp;lt;= Node.val &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= k &amp;lt;= 2 * 10^9&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I solved this in two ways: a less efficient approach using dynamic programming, and a very fast greedy method.
+Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FCPP 5: Coin in Square</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</link>
+      <pubDate>Thu, 01 Jan 2026 21:07:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</guid>
+      <description>&lt;p&gt;This is the solution to problem 5 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We&amp;rsquo;re playing a game at a carneval. There is table with horizontal and vertical lines that create a grid of squares. The side of each square is one inch long.
+We throw a penny onto the table. If the penny doesn&amp;rsquo;t cross any line, we win a prize!
+The diameter of a penny is \(3/4\) inches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FCPP 3: The Flippant Juror</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_3_the_flippant_juror/</link>
+      <pubDate>Thu, 01 Jan 2026 20:23:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_3_the_flippant_juror/</guid>
+      <description>&lt;p&gt;This is the solution to problem 3 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jury A consists of three jurors. The first two have a probability \(p\) of being correct. The third one chooses based on a fair coin toss. All three jurors vote independently.
+Jury B consists of a single juror that is correct with probability \(p\).&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 55: Jump Game</title>
       <link>http://localhost:1313/posts/leetcode/leetcode_55/</link>
-      <pubDate>Thu, 01 Jan 2026 16:36:00 +0100</pubDate>
+      <pubDate>Thu, 01 Jan 2026 19:37:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/leetcode/leetcode_55/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/jump-game/&#34;&gt;LeetCode problem 55: Jump Game&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The instructions are as follows:&lt;/p&gt;
@@ -39,6 +69,18 @@ Return &lt;code&gt;true&lt;/code&gt; if you can reach the last index, or &lt;cod
 &lt;/blockquote&gt;
 &lt;p&gt;I solved this in two ways: a less efficient approach using dynamic programming, and a very fast greedy method.
 Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LeetCode 122: Best Time to Buy and Sell Stock II</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_122/</link>
+      <pubDate>Thu, 01 Jan 2026 16:36:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_122/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/&#34;&gt;LeetCode problem 122: Best Time to Buy and Sell Stock II&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;prices&lt;/code&gt; where &lt;code&gt;prices[i]&lt;/code&gt; is the price of a given stock on the \(i\)-th day.
+On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can sell and buy the stock multiple times on the same day, ensuring you never hold more than one share of the stock.
+Find and return the maximum profit you can achieve.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 189: Rotate Array</title>
@@ -67,7 +109,7 @@ We will always work with the remainder instead of the original \(k\).&lt;/p&gt;<
       <link>http://localhost:1313/posts/fcpp/fcpp_2_successive_wins/</link>
       <pubDate>Tue, 30 Dec 2025 21:23:00 +0100</pubDate>
       <guid>http://localhost:1313/posts/fcpp/fcpp_2_successive_wins/</guid>
-      <description>&lt;p&gt;This is a post in a series solving problems from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+      <description>&lt;p&gt;This is the solution for problem 2 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
 The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ellis is a tennis player who has to compete against two players: his father and the tennis club champion. The champion is a better player than the father. Ellis will play a three-set series with alternating opponents. He can either play his father first, then the champion, then his father again; or the champion first, then his father, then the champion again. If he wins two sets in a row, he wins a special prize.&lt;/p&gt;</description>
