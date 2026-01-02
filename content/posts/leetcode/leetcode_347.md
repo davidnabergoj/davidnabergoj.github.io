@@ -99,6 +99,50 @@ for (int i = n - 1; i >= 0 && k > 0; --i) {
 It takes \(O(k)\) space to create the output vector, which is bounded above by \(O(n)\) as \(k \leq n\).
 This snippet takes \(O(n + d)\) time: we iterate through at most \(n\) buckets. There are at most \(d\) elements in all buckets combined. Therefore, the inner loop does not cause a quadratic time complexity. We can again simplify: \(O(n + d) = O(n)\) as \(d \leq n\).
 
+## Full solution and final complexity analysis
+
+Let's see the full code.
+
+```cpp
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        // Compute element counts
+        int n = nums.size();
+        vector<int> counts(20001, 0);
+        int maxCount = 0;
+        for (int i = 0; i < n; ++i) {
+            int index = nums[i] + 10000;
+            counts[index]++;
+            maxCount = max(maxCount, counts[index]);
+        }
+
+        // Apply bucketing
+        int m = 1 + maxCount;
+        vector<vector<int>> buckets(n);
+        for (int i = -10000; i <= 10000; ++i) {
+            if (counts[i + 10000] > 0) {
+                int bin = n * counts[i + 10000] / m;
+                buckets[bin].push_back(i);
+            }
+        }
+
+        // Retrieve top k elements
+        vector<int> output;
+        for (int i = n - 1; i >= 0 && k > 0; --i) {
+            if (buckets[i].size() > 0) {
+                for (int j = 0; j < buckets[i].size() && k > 0; ++j) {
+                    output.push_back(buckets[i][j]);
+                    --k;
+                }
+            }
+        }
+
+        return output;
+    }
+};
+```
+
 The total time and space complexities are \(O(n + U)\), and both reduces to \(O(n)\) under the problem constraints.
 
 The code runs in 0 ms (beating 100% of other solutions) and takes 21.84 MB memory (beating 10%). I think this is an asymptotically optimal solution to this problem, so it will scale well with \(n\). We could have counted the elements using a hashmap, which would bring down the space complexity for counting from \(O(U)\) to \(O(d)\). Other efficient solutions include using a priority queue which holds `(count, element)` pairs and can thus output the top \(k\) elements in \(O(k \log n)\) time. However, its construction takes \(O(n \log n)\) time, making it asymptotically slower than our solution.

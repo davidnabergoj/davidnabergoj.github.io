@@ -162,7 +162,9 @@ Let&rsquo;s dive in!">
                 <li>
                     <a href="#counting-elements" aria-label="Counting elements">Counting elements</a></li>
                 <li>
-                    <a href="#bucketing-elements" aria-label="Bucketing elements">Bucketing elements</a>
+                    <a href="#bucketing-elements" aria-label="Bucketing elements">Bucketing elements</a></li>
+                <li>
+                    <a href="#full-solution-and-final-complexity-analysis" aria-label="Full solution and final complexity analysis">Full solution and final complexity analysis</a>
                 </li>
             </ul>
         </div>
@@ -243,7 +245,46 @@ For each non-empty bucket, we push its entries into <code>output</code> until we
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>It takes \(O(k)\) space to create the output vector, which is bounded above by \(O(n)\) as \(k \leq n\).
 This snippet takes \(O(n + d)\) time: we iterate through at most \(n\) buckets. There are at most \(d\) elements in all buckets combined. Therefore, the inner loop does not cause a quadratic time complexity. We can again simplify: \(O(n + d) = O(n)\) as \(d \leq n\).</p>
-<p>The total time and space complexities are \(O(n + U)\), and both reduces to \(O(n)\) under the problem constraints.</p>
+<h2 id="full-solution-and-final-complexity-analysis">Full solution and final complexity analysis<a hidden class="anchor" aria-hidden="true" href="#full-solution-and-final-complexity-analysis">#</a></h2>
+<p>Let&rsquo;s see the full code.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">topKFrequent</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&amp;</span> <span class="n">nums</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Compute element counts
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">counts</span><span class="p">(</span><span class="mi">20001</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">maxCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">10000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">counts</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">maxCount</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">maxCount</span><span class="p">,</span> <span class="n">counts</span><span class="p">[</span><span class="n">index</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Apply bucketing
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">maxCount</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">buckets</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10000</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">counts</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">10000</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">int</span> <span class="n">bin</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">counts</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">10000</span><span class="p">]</span> <span class="o">/</span> <span class="n">m</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">buckets</span><span class="p">[</span><span class="n">bin</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Retrieve top k elements
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">output</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">buckets</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">buckets</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">output</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">buckets</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">                    <span class="o">--</span><span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">output</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>The total time and space complexities are \(O(n + U)\), and both reduces to \(O(n)\) under the problem constraints.</p>
 <p>The code runs in 0 ms (beating 100% of other solutions) and takes 21.84 MB memory (beating 10%). I think this is an asymptotically optimal solution to this problem, so it will scale well with \(n\). We could have counted the elements using a hashmap, which would bring down the space complexity for counting from \(O(U)\) to \(O(d)\). Other efficient solutions include using a priority queue which holds <code>(count, element)</code> pairs and can thus output the top \(k\) elements in \(O(k \log n)\) time. However, its construction takes \(O(n \log n)\) time, making it asymptotically slower than our solution.</p>
 <p>Thanks for reading! If you liked this post, you can support me on <a href="https://ko-fi.com/davidnabergoj">Ko-fi ☕</a>. More LeetCode solutions coming soon :)</p>
 
