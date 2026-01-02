@@ -143,7 +143,7 @@ public:
 };
 ```
 
-The total time and space complexities are \(O(n + U)\), and both reduces to \(O(n)\) under the problem constraints.
+The total time and space complexities are \(O(n + U)\), and both reduce to \(O(n)\) under the problem constraints.
 
 The code runs in 0 ms (beating 100% of other solutions) and takes 21.84 MB memory (beating 10%). I think this is an asymptotically optimal solution to this problem, so it will scale well with \(n\). We could have counted the elements using a hashmap, which would bring down the space complexity for counting from \(O(U)\) to \(O(d)\). Other efficient solutions include using a priority queue which holds `(count, element)` pairs and can thus output the top \(k\) elements in \(O(k \log n)\) time. However, its construction takes \(O(n \log n)\) time, making it asymptotically slower than our solution.
 
