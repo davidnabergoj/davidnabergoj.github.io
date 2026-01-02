@@ -2,11 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/array/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bucket-sort/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
-    <lastmod>2026-01-02T11:38:00+01:00</lastmod>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2026-01-02T11:38:00+01:00</lastmod>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode/leetcode_55-copy/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-01-02T22:25:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fcpp/</loc>
+    <lastmod>2026-01-02T13:21:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/fcpp/fcpp_6_chuck_a_luck/</loc>
+    <lastmod>2026-01-02T13:21:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/probability/</loc>
+    <lastmod>2026-01-02T13:21:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode/leetcode_61/</loc>
     <lastmod>2026-01-02T11:38:00+01:00</lastmod>
@@ -17,32 +44,14 @@
     <loc>http://localhost:1313/tags/pointers/</loc>
     <lastmod>2026-01-02T11:38:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-02T11:38:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-02T11:38:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-01-02T11:38:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/fcpp/</loc>
-    <lastmod>2026-01-01T21:07:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</loc>
     <lastmod>2026-01-01T21:07:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/geometry/</loc>
     <lastmod>2026-01-01T21:07:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/probability/</loc>
-    <lastmod>2026-01-01T21:07:00+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/fcpp/fcpp_3_the_flippant_juror/</loc>
     <lastmod>2026-01-01T20:23:00+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/array/</loc>
-    <lastmod>2026-01-01T19:37:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dynamic-programming/</loc>
     <lastmod>2026-01-01T19:37:00+01:00</lastmod>
@@ -190,6 +199,8 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-11-29T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/risk_analysis/markowitz_model/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

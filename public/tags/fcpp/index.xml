@@ -7,8 +7,18 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 21:07:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 13:21:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/fcpp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCPP 6: Chuck-a-Luck</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_6_chuck_a_luck/</link>
+      <pubDate>Fri, 02 Jan 2026 13:21:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_6_chuck_a_luck/</guid>
+      <description>&lt;p&gt;This is the solution to problem 6 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We&amp;rsquo;re playing a gambling game called Chuck-a-Luck at a carneval. We bet either 1, 2, 3, 4, 5, or 6 dollars. Three dice are rolled. If the bet appears on one, two, or three dice, we receive one, two, or three times our bet plus our money back. Otherwise, we lose our bet.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FCPP 5: Coin in Square</title>
       <link>http://localhost:1313/posts/fcpp/fcpp_5_coin_in_square/</link>

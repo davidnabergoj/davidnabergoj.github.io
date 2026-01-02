@@ -7,8 +7,30 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Fri, 02 Jan 2026 11:38:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 22:25:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 347: Top K Frequent Elements</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_55-copy/</link>
+      <pubDate>Fri, 02 Jan 2026 22:25:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_55-copy/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/top-k-frequent-elements&#34;&gt;LeetCode problem 347: Top K Frequent Elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer \(k\), return the \(k\) most frequent elements. You may return the answer in any order.&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 10^5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-10^4 &amp;lt;= nums[i] &amp;lt;= 10^4&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;\(k\) is in the range &lt;code&gt;[1, the number of unique elements in the array]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;It is guaranteed that the answer is unique.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I solved this problem on NeetCode as well. The goal was to find a solution in \(O(n)\) time and space, where \(n\) is the length of &lt;code&gt;nums&lt;/code&gt;.
+I&amp;rsquo;ll be showing this solution here.
+Even though sort-based solutions that take \(O(n\log n)\) time are faster for LeetCode leaderboards, this solution will scale a bit better.
+Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 61: Rotate List</title>
       <link>http://localhost:1313/posts/leetcode/leetcode_61/</link>
@@ -25,8 +47,10 @@
 &lt;li&gt;&lt;code&gt;0 &amp;lt;= k &amp;lt;= 2 * 10^9&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I solved this in two ways: a less efficient approach using dynamic programming, and a very fast greedy method.
-Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;recalling-array-rotations&#34;&gt;Recalling array rotations&lt;/h2&gt;
+&lt;p&gt;In a recent post, I solved this exact problem for arrays (&lt;a href=&#34;http://localhost:1313/posts/leetcode/leetcode_189/&#34;&gt;LeetCode problem 189&lt;/a&gt;).
+The method was a triple-reversal procedure:&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 55: Jump Game</title>
