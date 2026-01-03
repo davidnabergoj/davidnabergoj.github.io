@@ -84,7 +84,7 @@ Each term in the sum is the probability of a roll sequence of length \(i\). The 
 We notice that \(P(\textrm{roll neither 7, nor } v)\) is always the same for a given \(v\) regardless of \(i\).
 Since probabilities are between 0 and 1, the entire sum is a geometric series of the form:
 \[
-    \sum_{i=0}^\infty p^i = \frac{1}{1 - p}.
+    \sum_{i=0}^\infty q^i = \frac{1}{1 - q}.
 \]
 
 Let's compute this individually for all values \(v\in V\).
@@ -100,7 +100,7 @@ Let \(q(v) = P(\textrm{roll neither 7, nor } v) = \frac{36 - 6 - \#v}{36}\).
 | 9  |  4  | \(\frac{13}{18}\) | \(\frac{18}{5}\)      |
 | 10  |  3  | \(\frac{3}{4}\) | \(4\)      |
 
-The probabilities are the same for \(4, 10\); \(5, 9\); and \(6, 8\) due to symmetry in the totals table.
+The probabilities are the same for \(\{4, 10\}\), \(\{5, 9\}\), and \(\{6, 8\}\) due to symmetry in the totals table.
 What's left is to compute \(P_\mathrm{point-win}\):
 
 \[
