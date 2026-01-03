@@ -7,8 +7,18 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Fri, 02 Jan 2026 22:25:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jan 2026 12:20:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCPP 7: Curing the Compulsive Gambler</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_7_curing_the_compulsive_gambler/</link>
+      <pubDate>Sat, 03 Jan 2026 12:20:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_7_curing_the_compulsive_gambler/</guid>
+      <description>&lt;p&gt;This is the solution to problem 7 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Mr. Brown is playing roulette. He always bets one dollar on 13. If the 38-number wheel lands on it, then he wins $35 and the stake back. His friend bets him $20 that he will be behind after 36 plays.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 347: Top K Frequent Elements</title>
       <link>http://localhost:1313/posts/leetcode/leetcode_347/</link>

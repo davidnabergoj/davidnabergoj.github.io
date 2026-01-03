@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/bucket-sort/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 347: Top K Frequent Elements</title>
-      <link>http://localhost:1313/posts/leetcode/leetcode_55-copy/</link>
+      <link>http://localhost:1313/posts/leetcode/leetcode_347/</link>
       <pubDate>Fri, 02 Jan 2026 22:25:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/leetcode/leetcode_55-copy/</guid>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_347/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/top-k-frequent-elements&#34;&gt;LeetCode problem 347: Top K Frequent Elements&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The instructions are as follows:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,9 +26,9 @@
 &lt;li&gt;It is guaranteed that the answer is unique.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I solved this problem on NeetCode as well. The goal was to find a solution in \(O(n)\) time and space, where \(n\) is the length of &lt;code&gt;nums&lt;/code&gt;.
+&lt;p&gt;I solved this problem on &lt;a href=&#34;https://neetcode.io/problems/top-k-elements-in-list&#34;&gt;NeetCode&lt;/a&gt; as well. The goal was to find a solution in \(O(n)\) time and space, where \(n\) is the length of &lt;code&gt;nums&lt;/code&gt;.
 I&amp;rsquo;ll be showing this solution here.
-Even though sort-based solutions that take \(O(n\log n)\) time are faster for LeetCode leaderboards, this solution will scale a bit better.
+Even though some solutions that take \(O(n\log n)\) time are faster for LeetCode leaderboards, this solution will scale a bit better.
 Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
     </item>
   </channel>
