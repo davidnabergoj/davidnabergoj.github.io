@@ -7,8 +7,27 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Fri, 02 Jan 2026 22:25:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 11:54:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 201: Bitwise AND of Numbers Range</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_201/</link>
+      <pubDate>Sun, 04 Jan 2026 11:54:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_201/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/bitwise-and-of-numbers-range&#34;&gt;LeetCode problem 201: Bitwise AND of Numbers Range&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given two integers &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; that represent the range &lt;code&gt;[left, right]&lt;/code&gt;, return the bitwise AND of all numbers in this range, inclusive.&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= left &amp;lt;= right &amp;lt;= 2^31 - 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;looking-at-the-common-binary-prefix&#34;&gt;Looking at the common binary prefix&lt;/h2&gt;
+&lt;p&gt;Let \(l\) and \(r\) denote &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt;, respectively.
+I&amp;rsquo;ll denote binary strings with &lt;code&gt;0b...&lt;/code&gt;, for example 5 can be written as &lt;code&gt;0b101&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 347: Top K Frequent Elements</title>
       <link>http://localhost:1313/posts/leetcode/leetcode_347/</link>

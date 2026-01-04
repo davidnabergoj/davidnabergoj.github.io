@@ -7,8 +7,22 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>2025 - David Nabergoj</copyright>
-    <lastBuildDate>Sun, 04 Jan 2026 11:54:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 19:02:00 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FCPP 13: The Prisoner&#39;s Dillema</title>
+      <link>http://localhost:1313/posts/fcpp/fcpp_13_the_prisoners_dillema/</link>
+      <pubDate>Sun, 04 Jan 2026 19:02:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/fcpp/fcpp_13_the_prisoners_dillema/</guid>
+      <description>&lt;p&gt;This is the solution to problem 13 from &lt;a href=&#34;https://www.amazon.com/Challenging-Problems-Probability-Solutions-Mathematics/dp/0486653552&#34;&gt;&lt;em&gt;Fifty Challenging Problems in Probability&lt;/em&gt; by Frederick Mosteller (1987)&lt;/a&gt;.
+The problem is paraphrased below; for reference, it is inspired by the original book.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prisoners \(A\), \(B\), and \(C\) with equally good records have applied for parole. Only two prisoners will be granted parole, but the prisoners themselves don&amp;rsquo;t know who.
+Prisoner \(A\) has a warder friend, who can answer this question.
+Instead of being direct, prisoner \(A\) contemplates asking: &amp;ldquo;Name one prisoner except me who will be granted parole.&amp;rdquo;
+He thinks that his chances of release before asking the question are \(\frac{2}{3}\).
+He incorrectly deduces that after asking, his chances go down to \(\frac{1}{2}\).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode 201: Bitwise AND of Numbers Range</title>
       <link>http://localhost:1313/posts/leetcode/leetcode_201/</link>
