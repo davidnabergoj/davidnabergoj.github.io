@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bit Manipulation on Sunny Coding</title>
+    <link>http://localhost:1313/tags/bit-manipulation/</link>
+    <description>Recent content in Bit Manipulation on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <atom:link href="http://localhost:1313/tags/bit-manipulation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 201: Bitwise AND of Numbers Range</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_201/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_201/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/bitwise-and-of-numbers-range&#34;&gt;LeetCode problem 201: Bitwise AND of Numbers Range&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given two integers &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; that represent the range &lt;code&gt;[left, right]&lt;/code&gt;, return the bitwise AND of all numbers in this range, inclusive.&lt;/p&gt;
+&lt;p&gt;Constraints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= left &amp;lt;= right &amp;lt;= 2^31 - 1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;Let \(\ell, r\) denote &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt;, respectievly.
+Performing bitwise AND (&amp;amp;) on the entire range would take \(O(r - l)\) time, which is impractical.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
