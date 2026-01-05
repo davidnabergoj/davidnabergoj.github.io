@@ -1,7 +1,7 @@
 +++
 date = '2025-12-25'
 draft = false
-tags = ['BFS', 'LeetCode', 'C++', 'Graph']
+tags = ['BFS', 'LeetCode', 'C++', 'Graph', 'Breadth first search']
 title = 'LeetCode 399: Evaluate Division'
 [params]
     author = 'David Nabergoj'

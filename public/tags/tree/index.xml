@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tree on Sunny Coding</title>
+    <link>http://localhost:1313/tags/tree/</link>
+    <description>Recent content in Tree on Sunny Coding</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>2025 - David Nabergoj</copyright>
+    <lastBuildDate>Mon, 05 Jan 2026 17:20:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 124: Binary Tree Maximum Path Sum</title>
+      <link>http://localhost:1313/posts/leetcode/leetcode_124/</link>
+      <pubDate>Mon, 05 Jan 2026 17:20:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/leetcode/leetcode_124/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s solve &lt;a href=&#34;https://leetcode.com/problems/jump-game/&#34;&gt;LeetCode problem 124: Binary Tree Maximum Path Sum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The instructions are as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
+The path sum of a path is the sum of the node&amp;rsquo;s values in the path.
+Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return the maximum path sum of any non-empty path.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
